@@ -1,0 +1,6 @@
+.letterContainer{
+    height: 90vh;
+    /* height: 828px; */
+    aspect-ratio: 0.7;
+    background-color: white;
+}

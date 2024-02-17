@@ -1,4 +1,25 @@
-.titleContainer{
-    height: 40vh;
-    background-color: #A0EDC9;
+*{
+    /* overflow-x: hidden; */
+}
+
+.description{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+.content{
+    margin: 11.6vh 0;
+    padding: 20px min(15.3vw, 30px);
+    text-align: center;
+    width: max(300px,80vw);
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 30px;
+}
+
+.letterContainer{
+    background-color: rgba(224, 249, 238, 1);
+    padding: 35px;
 }
