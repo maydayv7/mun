@@ -1,7 +1,20 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"); */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Uncommented out the body styles */
+/* body {
+  @apply leading-[normal] m-0;
+}
+*,
+::before,
+::after {
+  border-width: 0;
+}
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
-*{
+* {
   margin: 0;
   padding: 0;
-}
+} */
