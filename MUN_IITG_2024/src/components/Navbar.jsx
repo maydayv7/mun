@@ -5,7 +5,7 @@ import { Button } from "react-bootstrap";
 const Navbar = () => {
   return (
     // <nav className="bg-white border-gray-200 rounded-full dark:bg-gray-900">
-  <div className=" fixed left-1/2 transform -translate-x-1/2 flex flex-wrap items-center rounded-full justify-center mx-auto mt-2"> {/* Remove max-w-screen-xl */}
+  <div className="z-2 fixed left-1/2 transform -translate-x-1/2 flex flex-wrap items-center rounded-full justify-center mx-auto mt-2"> {/* Remove max-w-screen-xl */}
     {/* <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse"> */}
      
     {/* </div> */}
@@ -16,7 +16,7 @@ const Navbar = () => {
 </a>
         </li>
         <li>
-          <a href="#" className="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+          <a href="/AboutUs" className="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
         </li>
         <li>
           <a href="#" className="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 d:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>

@@ -1,10 +1,16 @@
 import Letter from '../../components/Letter/letter';
+import Navbar from '../../components/Navbar';
 import PageHeader from '../../components/PageHeader/pageHeader';
 import styles from './aboutUsStyles.module.css'
 
 const AboutUs = () => {
     return ( 
         <>
+            <div className='bg-black'>
+       
+       <Navbar/>
+       </div>
+            <Navbar/>
             <PageHeader title={'About Us'} color={'#A0EDC9'} />
             {/* <div className={styles.titleContainer}>Hello</div> */}
             <div className={styles.description}>
