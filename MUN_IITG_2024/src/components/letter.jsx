@@ -1,6 +1,6 @@
-import signature from "../../assets/aboutUs/sign.svg";
-import letterPolygon from "../../assets/aboutUs/LetterPolygon.png";
-import secyImg from "../../assets/aboutUs/secy1.png";
+import signature from "../assets/aboutUs/sign.svg";
+import letterPolygon from "../assets/aboutUs/LetterPolygon.png";
+import secyImg from "../assets/aboutUs/secy1.png";
 const Letter = () => {
   return (
     <>

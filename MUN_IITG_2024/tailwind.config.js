@@ -1,3 +1,4 @@
+import defaultTheme from 'tailwindcss/defaultTheme';
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -12,6 +13,8 @@ export default {
     extend: {
       fontFamily:{
         'cabinet':['Cabinet-Grotesk'],
+        'montserrat':'Montserrat, sans-serif',
+        'raleway':['Raleway', ...defaultTheme.fontFamily.sans]
       },
       screens:{
         'letter':'950px'

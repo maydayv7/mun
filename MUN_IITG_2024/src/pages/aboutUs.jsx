@@ -1,7 +1,6 @@
-import Letter from "../../components/Letter/letter";
-import Navbar from "../../components/Navbar";
-import PageHeader from "../../components/PageHeader/pageHeader";
-import styles from "./aboutUsStyles.module.css";
+import Letter from "../components/letter";
+import Navbar from "../components/Navbar";
+import PageHeader from "../components/pageHeader";
 
 const AboutUs = () => {
   return (
@@ -9,8 +8,8 @@ const AboutUs = () => {
       <Navbar />
       <PageHeader title={"About Us"} color={"#A0EDC9"} />
       {/* <div className={styles.titleContainer}>Hello</div> */}
-      <div className={styles.description}>
-        <p className={styles.content}>
+      <div className='w-full flex relative flex-col items-center'>
+        <p className='my-[11.6vh] py-5 px-[min(15.3vw,30px)] text-center w-[max(300px,80vw)] text-base font-extralight leading-[30px] text-[#192463] font-montserrat'>
           The MUN, or the Model United Nations, is a simulation of the actual
           UN. The participants pretend to represent a nation, and come to
           together to discuss the very same issues being debated upon in the UN.
@@ -26,7 +25,7 @@ const AboutUs = () => {
       </div>
       <div className="bg-[#E0F9EE] p-9 max-[400px]:p-2 w-full relative">
         <div className="flex flex-row w-full relative">
-          <p className="text-[#60E1A4] bg-[#E0F9EE] max-[350px]:text-[20px] text-[28px] sm:text-[32px] md:text-[40px] font-bold z-1 pr-4">
+          <p className="text-[#60E1A4] bg-[#E0F9EE] max-[350px]:text-[20px] text-[28px] sm:text-[32px] md:text-[40px] font-raleway font-bold z-1 pr-4">
             A Letter from our Secretary General
           </p>
           <hr className=" border-t-[2px] opacity-100 border-[#60E1A45E] w-[95%] absolute text-4xl mt-[22px] sm:mt-[26px] md:mt-[32px]" />
