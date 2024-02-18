@@ -17,7 +17,8 @@ export default {
         'raleway':['Raleway', ...defaultTheme.fontFamily.sans]
       },
       screens:{
-        'letter':'950px'
+        'letter':'950px',
+        'mobile':'500px',
       },
     },
   },

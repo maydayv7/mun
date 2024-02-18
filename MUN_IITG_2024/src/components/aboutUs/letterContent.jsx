@@ -1,7 +1,7 @@
-import signature from "../assets/aboutUs/sign.svg";
-import letterPolygon from "../assets/aboutUs/LetterPolygon.png";
-import secyImg from "../assets/aboutUs/secy1.png";
-const Letter = () => {
+import signature from "../../assets/aboutUs/sign.svg";
+import letterPolygon from "../../assets/aboutUs/LetterPolygon.png";
+import secyImg from "../../assets/aboutUs/secy1.png";
+const LetterContent = () => {
   return (
     <>
       <div className="relative min-w-none sm:w-[40vw] sm:min-w-[550px] max-w-[700px] h-contain min-h-740px bg-white max-[400px]:px-4 px-8 py-10 max-[400px]:text-[10px]  text-xs leading-5 text-[#3245A9] font-montserrat ml-[min(380px,40vw)] max-letter:mx-auto  ">
@@ -94,4 +94,4 @@ const Letter = () => {
   );
 };
 
-export default Letter;
+export default LetterContent;
