@@ -5,10 +5,18 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    fontFamily:{
-      'montserrat':'Montserrat, sans-serif'
+    // fontFamily:{
+    //   'montserrat':'Montserrat, sans-serif'
+    // },
+    
+    extend: {
+      fontFamily:{
+        'cabinet':['Cabinet-Grotesk'],
+      },
+      screens:{
+        'letter':'950px'
+      },
     },
-    extend: {},
   },
   plugins: [],
 }

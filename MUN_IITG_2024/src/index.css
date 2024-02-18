@@ -18,3 +18,9 @@
   margin: 0;
   padding: 0;
 } */
+@layer base{
+  @font-face {
+    font-family: 'Cabinet-Grotesk';
+    src: url('./assets/fonts/CabinetGrotesk-Variable.ttf') format('ttf');
+  }
+}
