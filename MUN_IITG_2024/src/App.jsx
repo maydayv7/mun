@@ -1,10 +1,7 @@
 
 import { BrowserRouter,Route, Routes } from 'react-router-dom'
 import './App.css'
-import AboutUs from './pages/AboutUs/aboutUs'
-import React from "react";
-import { useEffect } from "react";
-import ReactDOM from "react-dom";
+import AboutUs from './pages/aboutUs'
 // import { BrowserRouter, Route, Routes } from "react-router-dom";
 import  Home from "./pages/Home"
 import  './App.css'

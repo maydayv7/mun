@@ -1,4 +1,5 @@
-/** @type {import('tailwindcss').Config} */
+import defaultTheme from 'tailwindcss/defaultTheme';
+
 export default {
   content: [
     "./index.html",
@@ -19,22 +20,26 @@ export default {
       fontFamily: {
         montserrat: "Montserrat",
         "cabinet-grotesk": "'Cabinet Grotesk'",
+        cabinet: ['Cabinet-Grotesk'],
+        montserrat: 'Montserrat, sans-serif',
+        raleway: ['Raleway', ...defaultTheme.fontFamily.sans]
       },
-    },
-    fontSize: {
-      xl: "20px",
-      base: "16px",
-      inherit: "inherit",
-    },
-    screens: {
-      mq750: {
-        raw: "screen and (max-width: 750px)",
+      fontSize: {
+        xl: "20px",
+        base: "16px",
+        inherit: "inherit",
       },
-      mq675: {
-        raw: "screen and (max-width: 675px)",
-      },
-      mq450: {
-        raw: "screen and (max-width: 450px)",
+      screens: {
+        mq750: {
+          raw: "screen and (max-width: 750px)",
+        },
+        mq675: {
+          raw: "screen and (max-width: 675px)",
+        },
+        mq450: {
+          raw: "screen and (max-width: 450px)",
+        },
+        letter: '950px'
       },
     },
   },
@@ -42,4 +47,3 @@ export default {
     preflight: false,
   },
 };
-
