@@ -15,6 +15,9 @@ export default {
         khaki: "#fed470",
         lightsteelblue: "#aab4e7",
         mediumaquamarine: "#a0edc9",
+        lightRed: '#F8506B',
+        darkRed:"#F22949",
+        darkBlue:'#3245A9',
       },
       spacing: {},
       fontFamily: {
