@@ -6,7 +6,7 @@ const Letter = () => {
             <p className="text-[#60E1A4] mobile:text-nowrap max-[350px]:text-[12px] max-mobile:text-[22px] text-[28px] sm:text-[32px] md:text-[40px] font-raleway font-bold z-1 pr-4">
                 A Letter from our Secretary General
             </p>
-            <hr className="border-t-[2px] opacity-100 border-[#60E1A45E] w-full text-4xl max-[350px]:mt-8px max-mobile:mt-[45px] mt-[22px] sm:mt-[26px] md:mt-[32px]" />
+            <hr className="border-t-[2px] opacity-100 border-[#60E1A45E] w-full text-4xl mq350:hidden mq450:mt-[45px] mt-[45px] sm:mt-[30px] md:mt-[40px]" />
             </div>
             <div className="flex flex-col items-center mx-0 my-4 ">
             {/* <LetterImg img={secyImg} color={'#60E1A4'} /> */}
