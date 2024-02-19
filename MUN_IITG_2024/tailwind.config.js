@@ -20,6 +20,9 @@ export default {
         'letter':'950px',
         'mobile':'500px',
       },
+      boxShadow:{
+        'line':'0 40px 10px -40px #000000f4',
+      },
     },
   },
   plugins: [],
