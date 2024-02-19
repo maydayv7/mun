@@ -14,7 +14,6 @@ import  './App.css'
 
 
 
-
 function App(){
   return (
     <>
@@ -22,10 +21,9 @@ function App(){
      <Routes>
           <Route path='/AboutUs' element={<AboutUs/>}  />
           <Route exact path="/" element={<Home/>}/>
-        </Routes></BrowserRouter>
-       
-      
-    </>
+        </Routes>
+        </BrowserRouter>
+       </>
    
   )
 }
