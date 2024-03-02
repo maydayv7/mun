@@ -1,6 +1,13 @@
+
 .active{
     background-color: blue;
+    overflow: hidden;
 }
+.deactive{
+  background-color: white;
+}
+
+
 /* import Navbar from './Navbar'
 import { useNavigate,Link } from "react-router-dom";
 
