@@ -9,7 +9,7 @@ const AboutUs = () => {
       <Navbar />
       <PageHeader title={"About Us"} color={"#A0EDC9"} />
       <div className="w-full flex relative flex-col items-center">
-        <p className="my-[11.6vh] py-5 px-[min(15.3vw,30px)] text-center w-[max(300px,80vw)] text-base font-extralight leading-[30px] text-[#192463] font-montserrat">
+        <p className="lg:my-[11.6vh] py-5 px-[min(15.3vw,30px)] text-center w-[max(300px,80vw)] text-base font-extralight leading-[30px] text-[#192463] font-montserrat">
           The MUN, or the Model United Nations, is a simulation of the actual
           UN. The participants pretend to represent a nation, and come to
           together to discuss the very same issues being debated upon in the UN.
