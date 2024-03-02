@@ -15,10 +15,12 @@ export default {
         khaki: "#fed470",
         lightsteelblue: "#aab4e7",
         mediumaquamarine: "#a0edc9",
+        lightRed: '#F8506B',
+        darkRed:"#F22949",
+        darkBlue:'#3245A9',
       },
       spacing: {},
       fontFamily: {
-        montserrat: "Montserrat",
         "cabinet-grotesk": "'Cabinet Grotesk'",
         cabinet: ['Cabinet-Grotesk'],
         montserrat: 'Montserrat, sans-serif',
@@ -30,16 +32,31 @@ export default {
         inherit: "inherit",
       },
       screens: {
+        mq950:{
+          raw:'screen and (max-width:950px)'
+        },
         mq750: {
           raw: "screen and (max-width: 750px)",
         },
         mq675: {
           raw: "screen and (max-width: 675px)",
         },
+        mq520: {
+          raw: "screen and (max-width: 520px)",
+        },
         mq450: {
           raw: "screen and (max-width: 450px)",
         },
-        letter: '950px'
+        mq400: {
+          raw: "screen and (max-width: 400px)",
+        },
+        mq350:{
+          raw: "screen and (max-width: 350px)",
+        }
+      },
+      boxShadow:{
+        'line':'0 38.5px 10px -40px #000000f4',
+        'lineLight': '0 36px 10px -40px #000000f4',
       },
     },
   },

@@ -1,4 +1,3 @@
-import '../App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Button } from "react-bootstrap";
 import { useState } from 'react';
@@ -20,10 +19,11 @@ import './Navbar.css'
         </li >
         <li   className={activeItem === 'About' ? 'active' : ''} 
         onClick={() => setActiveItem('About')}>
-          <a href="#" className="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+          <a href="/AboutUs" className="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About Us</a>
         </li>
-        <li>
-          <a href="/AboutUs" className="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+        <li   className={activeItem === 'Previous Editions' ? 'active' : ''} 
+        onClick={() => setActiveItem('Previous Editions')}>
+          <a href="/PreviousEditions" className="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Previous Editions</a>
         </li>
         <li   className={activeItem === 'Services' ? 'active' : ''} 
         onClick={() => setActiveItem('Services')}>
@@ -31,7 +31,7 @@ import './Navbar.css'
         </li>
         <li   className={activeItem === 'Contact' ? 'active' : ''} 
         onClick={() => setActiveItem('Contact')}>
-          <a href="#" className="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+          <a href="/ContactUs" className="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
         </li>
       </ul>
     </div>

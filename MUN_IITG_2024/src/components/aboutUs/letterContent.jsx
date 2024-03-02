@@ -1,11 +1,11 @@
-import signature from "../assets/aboutUs/sign.svg";
-import letterPolygon from "../assets/aboutUs/LetterPolygon.png";
-import secyImg from "../assets/aboutUs/secy1.png";
-const Letter = () => {
+import signature from "../../assets/aboutUs/sign.svg";
+import letterPolygon from "../../assets/aboutUs/LetterPolygon.png";
+import secyImg from "../../assets/aboutUs/secy1.png";
+const LetterContent = () => {
   return (
     <>
-      <div className="relative min-w-none sm:w-[40vw] sm:min-w-[550px] max-w-[700px] h-contain min-h-740px bg-white max-[400px]:px-4 px-8 py-10 max-[400px]:text-[10px]  text-xs leading-5 text-[#3245A9] font-montserrat ml-[min(380px,40vw)] max-letter:mx-auto  ">
-        <p className="">Dear Delegates,</p>
+      <div className="relative min-w-none sm:w-[40vw] sm:min-w-[550px] max-w-[700px] h-contain min-h-740px bg-white mq400:px-4 px-8 py-10 mq400:text-[10px]  text-xs leading-5 text-[#3245A9] font-montserrat ml-[min(385px,40vw)] mq950:mx-auto  ">
+        <p>Dear Delegates,</p>
         <br />
         {/* Body of letter */}
         <div className="body">
@@ -64,10 +64,8 @@ const Letter = () => {
         <br />
         <div className="flex h-contain justify-between items-end">
           {/* Salutations */}
-          <div className="flex flex-col h-full">
-            <p>Suhayl Mahek</p>
-            <p>Secretary General</p>
-            <p>IITGMUN Ed XVI</p>
+          <div>
+            Suhayl Mahek <br />Secretary General <br />IITGMUN Ed XVI
           </div>
           {/* Signature */}
           <div className="w-[138.4px] h-[79px] flex flex-col">
@@ -78,13 +76,13 @@ const Letter = () => {
             </div>
           </div>
           {/* Secy Image */}
-          <div className="absolute max-[950px]:hidden bottom-0 -left-[min(380px,40vw)] z-1 w-[40vw]  ">
+          <div className="absolute mq950:hidden bottom-0 -left-[min(385px,40vw)] z-1 w-[40vw]  ">
             <img
               className="w-[40vw] max-w-[400px] min-w-[250px] drop-shadow-[10px_0px_0px_#60E1A4] "
               src={secyImg}
             />
             <img
-              className="absolute bottom-0 w-[35vw] max-w-[350px] min-w-[200px]"
+              className="absolute left-0 bottom-0 w-[35vw] max-w-[350px] min-w-[200px]"
               src={letterPolygon}
             />
           </div>
@@ -94,4 +92,4 @@ const Letter = () => {
   );
 };
 
-export default Letter;
+export default LetterContent;
