@@ -1,11 +1,10 @@
 
 import { BrowserRouter,Route, Routes } from 'react-router-dom'
-import './App.css'
 import AboutUs from './pages/aboutUs'
 // import { BrowserRouter, Route, Routes } from "react-router-dom";
 import  Home from "./pages/Home"
-import  './App.css'
 import ContactUs from './pages/contactUs'
+import PrevEditions from './pages/prevEditions'
 
 
 
@@ -19,6 +18,7 @@ function App(){
      <Routes>
           <Route path='/ContactUs' element={<ContactUs/>}  />
           <Route path='/AboutUs' element={<AboutUs/>}  />
+          <Route path='/PreviousEditions' element={<PrevEditions/>}  />
           <Route exact path="/" element={<Home/>}/>
         </Routes>
         </BrowserRouter>
