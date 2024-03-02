@@ -1,4 +1,4 @@
-import { Navbar } from "react-bootstrap";
+import Navbar from './Navbar'
 import { useNavigate,Link } from "react-router-dom";
 
 
@@ -7,7 +7,7 @@ const GreenPurpleFrame = () => {
   
     return (
 
-      <div className="w-full h-[1024px] relative bg-white overflow-hidden tracking-[normal] text-left text-[34.2px] text-white font-montserrat">
+      <div className="w-full h-[1024px] relative bg-white overflow-hidden tracking-[normal] text-left text-[34.2px] text-white font-montserrat ">
         <div className="absolute top-[0px] left-[361px] bg-mediumaquamarine w-[361px] h-[987px]" />
         <div className="absolute top-[0px] left-[722px] bg-lightsteelblue w-[361px] h-[987px]" />
         <div className="absolute top-[329px] left-[1006.5px] w-[370.3px] h-[645.7px] z-[1] flex items-center justify-center">
@@ -23,6 +23,7 @@ const GreenPurpleFrame = () => {
             <img
               className="w-full h-full z-[1] object-contain absolute left-[0px] top-[0px] [transform:scale(1.288)]"
               alt=""
+              
               src="/woman.svg"
             />
           </div>
@@ -109,7 +110,7 @@ const GreenPurpleFrame = () => {
               Contact us
             </div>
           </nav> */}
-          <Navbar className="z[1]"/>
+          <Navbar/>
           <div className="cursor-pointer [border:none] p-3 bg-darkslateblue rounded-[7px] shadow-[0px_4px_40px_rgba(189,_189,_189,_0.4)] flex flex-row items-center justify-center z-[1] ml-[-595px] hover:bg-royalblue">
             <div className="relative text-xl leading-[14px] font-medium font-montserrat text-white text-center">
               
