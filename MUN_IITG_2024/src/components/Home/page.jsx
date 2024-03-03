@@ -1,5 +1,11 @@
 import "./mun.css";
 import "./position.css";
+import { Carousel } from '@heathmont/moon-core-tw';
+
+
+import { ControlsChevronLeftSmall, ControlsChevronRightSmall } from '@heathmont/moon-icons-tw';
+
+// import { Carousel } from 'flowbite-react';
 import logo_1 from "./resources/Group 112.png";
 import logo_2 from "./resources/Group 34471.png";
 import logo_3 from "./resources/Group 34473.png";
@@ -34,7 +40,7 @@ import Footer from "../general/Footerm";
 const Mun = () => {
 
     const [currentIndex, setCurrentIndex] = useState(0);
-
+    const items = Array.from({ length: 25 }, (index) => index);
     // Define a function to handle left arrow click
     const handleLeftArrowClick = () => {
         setCurrentIndex(prevIndex => (prevIndex === 0 ? Data.length - 1 : prevIndex - 1));
@@ -210,11 +216,12 @@ const Mun = () => {
                     </div>
                 </div>
             </div>
+            <div className="review_container">
             <div className="comm_title_box">
                 <h1 className="cabi_font our_comm all_font">Reviews</h1>
                 
             </div>
-            <div className="reviews_container">
+            {/* <div className="reviews_container">
                 <img src={left_point} className="left_point pointer" alt="" onClick={handleLeftArrowClick}/>
                 <div className="reviews_box">
                     <div className="review_card_cat_4 position_l3">
@@ -311,7 +318,71 @@ const Mun = () => {
                     </div>
                 </div>
                 <img src={right_point} className="right_point pointer" alt="" onClick={handleRightArrowClick}/>
-            </div> 
+            </div>  */}
+     {/* <div className="h-56 sm:h-64 xl:h-80 2xl:h-96">
+      <Carousel onSlideChange={(index) => console.log('onSlideChange()', index)}>
+        <div className="flex h-full items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white">
+          Slide 1
+        </div>
+        <div className="flex h-full items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white">
+          Slide 2
+        </div>
+        <div className="flex h-full items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white">
+          Slide 3
+        </div>
+      </Carousel>
+    </div> */}
+    
+      <Carousel className='carosol_container' >
+      {({ firstVisibleIndex, lastVisibleIndex }) => (
+        <>
+          {/* <Carousel.LeftArrow>
+            <ControlsChevronLeftSmall />
+          </Carousel.LeftArrow> */}
+          <Carousel.Reel>
+            {items.map((_, index) => (
+              <Carousel.Item key={index} className="w-100 h-70">
+          
+                {/* <div className="review_card_cat_4 position_r3">
+                        <img src={pink_right} className="rectangle_4" alt="" />
+                        <img src={male_profile} className="male_profile_4" alt="" />  
+                        <div className="bio_heading_4">
+                            <h2 className="mons_font cf2 review_f_size_4 all_font">Vishwaprasanna Hariharan</h2>
+                            <p className="mons_font cf2 review_f_size_4 all_font boldness">Delegate</p>
+                        </div>
+                        <div className="comment_4">
+                            <p className="mons_font cf2 review_f_size_4 all_font boldness">"It's a really amazing platform to learn not only about the affairs of
+                                the world but also about how to articulate your thoughts and put them into words."
+                            </p>
+                        </div>                      
+                    </div> */}
+                    <div className="review_card_cat_1">
+                        <img src={Data[currentIndex+3].image} className="rectangle" alt="" />
+                        <img src={Data[currentIndex+3].profileImage} className="male_profile" alt="" />
+                        <div className="bio_heading">
+                            <h2 className="mons_font cf2 review_f_size all_font">Vishwaprasanna Hariharan</h2>
+                            <p className="mons_font cf2 review_f_size all_font">Delegate</p>
+                        </div>
+                        <div className="comment">
+                            <p className="mons_font cf2 review_f_size all_font">"It's a really amazing platform to learn not only about the affairs of
+                                the world but also about how to articulate your thoughts and put them into words."
+                            </p>
+                        </div>
+                        <div className="stars_box"></div>
+                    </div>
+                   
+              </Carousel.Item>
+            ))}
+          </Carousel.Reel>
+          {/* <Carousel.RightArrow>
+            <ControlsChevronRightSmall />
+          </Carousel.RightArrow> */}
+          
+        </>
+      )}
+
+    </Carousel>
+    </div>
             <div className="comm_title_box ">
                 <h1 className="cabi_font our_comm all_font collabtitle">In Collaboration with</h1>
               

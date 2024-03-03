@@ -145,7 +145,7 @@
 .review_card_cat_1{
     height: 17.28vw;
     width: 26.73vw;
-    position: absolute;
+position: relative;
     border-radius: 0.832vw;
     z-index: 10;
     background-color: white;
