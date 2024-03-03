@@ -216,11 +216,7 @@ const Mun = () => {
                     </div>
                 </div>
             </div>
-            <div className="review_container">
-            <div className="comm_title_box">
-                <h1 className="cabi_font our_comm all_font">Reviews</h1>
-                
-            </div>
+           
             {/* <div className="reviews_container">
                 <img src={left_point} className="left_point pointer" alt="" onClick={handleLeftArrowClick}/>
                 <div className="reviews_box">
@@ -332,14 +328,20 @@ const Mun = () => {
         </div>
       </Carousel>
     </div> */}
+     <div className="comm_title_box modified">
+                <h1 className="cabi_font our_comm all_font">Reviews</h1>
+                
+            </div>
     
+     <div className="review_container">
+           
       <Carousel className='carosol_container' >
       {({ firstVisibleIndex, lastVisibleIndex }) => (
         <>
           {/* <Carousel.LeftArrow>
             <ControlsChevronLeftSmall />
           </Carousel.LeftArrow> */}
-          <Carousel.Reel>
+          <Carousel.Reel className="reel_container">
             {items.map((_, index) => (
               <Carousel.Item key={index} className="w-100 h-70">
           
@@ -383,6 +385,7 @@ const Mun = () => {
 
     </Carousel>
     </div>
+    <div className="color"></div>
             <div className="comm_title_box ">
                 <h1 className="cabi_font our_comm all_font collabtitle">In Collaboration with</h1>
               
