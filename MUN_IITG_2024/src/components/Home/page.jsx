@@ -20,8 +20,16 @@ import blue_frame from "./resources/blue_frame.png";
 import orange_frame from "./resources/orange_frame.png";
 import pink_left from "./resources/pink_left.png";
 import pink_right from "./resources/pink_right.png";
-import Navbar from '../general/Navbar'
+import Navbar from '../general/Navbar'; 
+import mountain from './resources/mouuntain.png'
+import seal from './resources/seal.png';
+import women from './resources/women.png';
+import sealbase from './resources/sealbase.png';
+import sponsor1 from './resources/sponsor1.png';
+import  sponsor2 from './resources/sponsor2.png';
+import sponsor3 from './resources/sponsor3.png';
 import { useState } from "react";
+import Footer from "../general/Footerm";
 
 const Mun = () => {
 
@@ -68,11 +76,12 @@ const Mun = () => {
                     <p className="font_cal mons_font line_4">Dead Poets society</p>
                 </div>
             </div>
+           
+            <div className="comm_post_container">
             <div className="comm_title_box">
                 <h1 className="cabi_font our_comm all_font">Our Committees</h1>
               
             </div>
-            <div className="comm_post_container">
                 <div className="comm_comp">
                     <div className="left_box">
                         <p className="comp_title cabi_font all_font cf1">Lok Sabha</p>
@@ -94,7 +103,7 @@ const Mun = () => {
                                 repellat nobis consequatur exercitationem incidunt necessitatibus.
                             </p>
                         </div>
-                        <p className="apply_button mons_font all_font">APPLY!</p>
+                      
                         <img src={img_1} className="img_1" alt="" />
                         <img src={img_2} className="img_2" alt="" />
                     </div>
@@ -120,7 +129,7 @@ const Mun = () => {
                                 repellat nobis consequatur exercitationem incidunt necessitatibus.
                             </p>
                         </div>
-                        <p className="apply_button mons_font all_font bg2">APPLY!</p>
+                       
                         <img src={img_3} className="img_1" alt="" />
                         <img src={img_4} className="img_2" alt="" />
                     </div>
@@ -146,7 +155,8 @@ const Mun = () => {
                                 repellat nobis consequatur exercitationem incidunt necessitatibus.
                             </p>
                         </div>
-                        <p className="apply_button mons_font all_font">APPLY!</p>
+                        <img src={img_1} className="img_1" alt="" />
+                        <img src={img_2} className="img_2" alt="" />
                     </div>
                 </div>
                 <div className="comm_comp">
@@ -169,7 +179,8 @@ const Mun = () => {
                                 repellat nobis consequatur exercitationem incidunt necessitatibus.
                             </p>
                         </div>
-                        <p className="apply_button mons_font all_font bg2">APPLY!</p>
+                        <img src={img_1} className="img_1" alt="" />
+                        <img src={img_2} className="img_2" alt="" />
                     </div>
                 </div>
             </div>
@@ -301,7 +312,17 @@ const Mun = () => {
                 </div>
                 <img src={right_point} className="right_point pointer" alt="" onClick={handleRightArrowClick}/>
             </div> 
-          
+            <div className="comm_title_box ">
+                <h1 className="cabi_font our_comm all_font collabtitle">In Collaboration with</h1>
+              
+            </div>
+         <div className="sponsor_logo">
+<div className="sponsorone"><img src={sponsor1} alt="" className="s_logo1" /></div>
+<div className="sponsortwo"><img src={sponsor2} alt="" className="s_logo2" /></div>
+<div className="sponsorthree"><img src={sponsor3} alt=""className="s_logo3" /></div>
+         </div>
+
+         <Footer/>
         </div>
     );
 }

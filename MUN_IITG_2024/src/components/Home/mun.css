@@ -188,11 +188,11 @@
     width: 100vw;
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: center;
 }
 
 .our_comm {
-    font-size: 5.57vw;
+    font-size: 3.57vw;
     line-height: 3.6vw;
     color: var(--f-color-b);
     margin-left: 4.84vw;
@@ -212,6 +212,7 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    background-color: #E0F9EE;
 }
 
 .comm_comp {
@@ -232,6 +233,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: white;
 }
 
 .right_box {
@@ -243,6 +245,7 @@
     display: flex;
     justify-content: start;
     align-items: center;
+    background-color: white;
 }
 
 .center_box {
@@ -472,4 +475,30 @@
 
 .review_f_size_4{
     font-size: 0.74vw;
+}
+.sponsor_logo{
+
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+margin-bottom: 10vw;
+margin-top: 5vw;
+}
+
+.sponsorone{
+    margin-left: 13%;
+}
+.sponsorthree{
+    margin-right: 13%;
+}
+.s_logo1{
+    height: 10vw;
+    width: 10vw;
+}
+.s_logo3{
+    height: 10vw;
+    width: 10vw;
+}
+.collabtitle{
+    font-size: 2.57vw !important;
 }
