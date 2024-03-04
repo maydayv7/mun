@@ -568,14 +568,80 @@ margin-top: 5vw;
 .collabtitle{
     font-size: 2.57vw !important;
 }
+.review_container{
+position: relative;
+/* overflow: hidden; */
+display: flex;
+justify-content: center;;
+align-items: center;
+ background-color: #FFC2AF!important;
+ padding-top: 2vw;
+ padding-bottom: 2vw;
+ margin-bottom: 4vw;
+ }
 .carosol_container{
- width: 50% !important;
-margin-left: 20vw;
+width: 75% !important;
+
 height: 17.28vw;
-margin-bottom: 4vw;
+margin-top: 1vw;
+
 
 }
-.review_container{
-background-color: #FFC2AF!important;
-margin-bottom: 4vw;
+.modified{
+    background-color: #FFC2AF;
+    padding-bottom: 3vw;
+    height: 9vw !important;
+    padding-top: 3vw;
 }
+.reel_container{
+    /* position: absolute;
+    bottom: ; */
+    position: relative;
+    bottom: 3vw;
+    border-radius: 0.61vw;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: -ms-autohiding-scrollbar; /* IE/Edge */
+    overflow: -moz-scrollbars-none; /* Firefox */
+    /* box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.6);  */
+
+}
+.color{
+    /* position: absolute !important; */
+    z-index:100;
+    background-color: #FFC2AF;
+    /* height: 5vw; */
+}
+
+.bubble-container {
+    position: fixed;
+    bottom: 20px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+    z-index: 999;
+    width: 4vw;
+    height: 4vw;
+    background-color: #0758ae;
+    border-radius: 50%;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.6); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .bubble {
+ /* Bubble background color */
+    color: #fff; /* Text color */
+text-decoration: none;
+    /* Increased height */
+   
+   font-size: 1vw;/* Should be equal to the height */
+   /* Optional: Adds a shadow */
+    cursor: pointer; /* Optional: Change cursor on hover */
+  }
+  
+  
+  .bubble:hover {
+    background-color: #0056b3; /* Change background color on hover */
+  }
+  .modified_review{
+    font-size: 2.5vw;
+  }

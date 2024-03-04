@@ -65,23 +65,7 @@ const Mun = () => {
 
 
         <div className="mun_container">
-            <div className={state}>
-                <div className="inside_cont">
-                    <div className="up_box">
-                        <div className="l_box">
-                            <p className="comp_title cabi_font all_font cf1">Lok Sabha</p>
-                            <img src={lok_sabha} className="lok_sabha" alt="" />
-                        </div>
-                        <div className="r_box">
-                            <p className="up_txt f_size_12 all_font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
-                             consectetur. Laudantium eveniet asperiores iure, sunt hic nobis voluptatibus libero recusandae cupiditate vero sequi 
-                            </p>
-                        </div>
-                    </div>
-                    <div className="down_box"></div>
-                </div>
-            </div>
-            <Navbar />
+                <Navbar />
             <div className="logo_container">
                 <div className="color_logo color_logo_1"></div>
                 <div className="color_logo color_logo_2"></div>
@@ -276,12 +260,8 @@ const Mun = () => {
                     </div>
                 </div>
             </div>
-            <div className="review_container">
-                <div className="comm_title_box">
-                    <h1 className="cabi_font our_comm all_font">Reviews</h1>
 
-                </div>
-                {/* <div className="reviews_container">
+            {/* <div className="reviews_container">
                 <img src={left_point} className="left_point pointer" alt="" onClick={handleLeftArrowClick}/>
                 <div className="reviews_box">
                     <div className="review_card_cat_4 position_l3">
@@ -379,7 +359,7 @@ const Mun = () => {
                 </div>
                 <img src={right_point} className="right_point pointer" alt="" onClick={handleRightArrowClick}/>
             </div>  */}
-                {/* <div className="h-56 sm:h-64 xl:h-80 2xl:h-96">
+            {/* <div className="h-56 sm:h-64 xl:h-80 2xl:h-96">
       <Carousel onSlideChange={(index) => console.log('onSlideChange()', index)}>
         <div className="flex h-full items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white">
           Slide 1
@@ -392,6 +372,13 @@ const Mun = () => {
         </div>
       </Carousel>
     </div> */}
+    
+            <div className="comm_title_box modified">
+                <h1 className="cabi_font our_comm all_font modified_review">Let read some reviews</h1>
+
+            </div>
+
+            <div className="review_container">
 
                 <Carousel className='carosol_container' >
                     {({ firstVisibleIndex, lastVisibleIndex }) => (
@@ -399,7 +386,7 @@ const Mun = () => {
                             {/* <Carousel.LeftArrow>
             <ControlsChevronLeftSmall />
           </Carousel.LeftArrow> */}
-                            <Carousel.Reel>
+                            <Carousel.Reel style={{ overflow: 'hidden' }} className="reel_container">
                                 {items.map((_, index) => (
                                     <Carousel.Item key={index} className="w-100 h-70">
 
@@ -433,6 +420,7 @@ const Mun = () => {
 
                                     </Carousel.Item>
                                 ))}
+                                           <div className="color"></div>
                             </Carousel.Reel>
                             {/* <Carousel.RightArrow>
             <ControlsChevronRightSmall />
@@ -443,6 +431,8 @@ const Mun = () => {
 
                 </Carousel>
             </div>
+           
+ 
             <div className="comm_title_box ">
                 <h1 className="cabi_font our_comm all_font collabtitle">In Collaboration with</h1>
 
@@ -454,6 +444,11 @@ const Mun = () => {
             </div>
 
             <Footer />
+            <div class="bubble-container">
+                <a href="form.html" class="bubble">
+                    Apply
+                </a>
+            </div>
         </div>
     );
 }
