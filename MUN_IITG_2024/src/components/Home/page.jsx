@@ -452,7 +452,7 @@ const Mun = () => {
 
             <Footer />
             <div className="bubble-container">
-                <a href="form.html" className="bubble">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSclG4wC1Erj9bEBwSZdl9XJfLJleJVYGb3FypLEaYCyz3PIbA/viewform?usp=send_form" target="_blank" className="bubble">
                     Apply
                 </a>
             </div>
