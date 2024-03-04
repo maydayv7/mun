@@ -39,6 +39,8 @@ import { useState } from "react";
 import Footer from "../general/Footerm";
 import quotes_left from "./resources/quotes_left.png";
 import quotes_right from "./resources/quotes_right.png";
+import ham_logo from "./resources/Vector 11.png";
+import cross_logo from "./resources/Vector 10.png";
 
 const Mun = () => {
 
@@ -55,13 +57,18 @@ const Mun = () => {
     };
 
     const [state, setState] = useState("hide_content mobile_line_2");
+    var [state2, setState2] = useState(true);
 
     function showMore() {
         setState("show_content mobile_line_2");
     }
 
-    function seeLess(){
+    function seeLess() {
         setState("hide_content mobile_line_2");
+    }
+
+    function handleClick() {
+        setState2(!state2);
     }
 
 
@@ -69,6 +76,18 @@ const Mun = () => {
 
 
         <div className="mun_container">
+            <img src={ham_logo} onClick={handleClick} className={state2 ? "ham_logo" : "no_logo"} />
+            <img src={cross_logo} onClick={handleClick} className={state2 ? "no_logo" : "cross_logo"} />
+
+            <div className={state2 ? "no_logo" : "hamburger_menu"}>
+                <div className="ham_box">
+                    <div className="link_box"><a href="#" className="link_txt">Home</a></div>
+                    <div className="link_box"><a href="#" className="link_txt">About Us</a></div>
+                    <div className="link_box"><a href="#" className="link_txt">Previous Editions</a></div>
+                    <div className="link_box"><a href="#" className="link_txt">Contact Us</a></div>
+                </div>
+            </div>
+
             <div className={state}>
                 <div className="inside_cont">
                     <div className="up_box">
@@ -129,9 +148,13 @@ const Mun = () => {
             </div>
 
             <div className="comm_post_container">
-                <div className="comm_title_box">
+                {/* <div className="comm_title_box">
                     <h1 className="cabi_font our_comm all_font">Our Committees</h1>
 
+                </div> */}
+                <div className="flex flex-row flex-nowrap px-9 w-full align-center justify-center items-center h-[5vw]">
+                    <p className="mq350:text-[18px] font-raleway font-black mq520:text-xl text-2xl sm:text-3xl md:text-4xl mr-4 mq520:text-wrap text-nowrap" style={{ color: '#3245A9' }}>Our Commities </p>
+                    <hr className="w-full opacity-100 border-t-2 -translate-y-1" style={{ color: '#3245A9' }} />
                 </div>
                 <div className="comm_comp">
                     <div className="left_box">
@@ -462,9 +485,9 @@ const Mun = () => {
             </div>
 
 
-            <div className="comm_title_box ">
-                <h1 className="cabi_font our_comm all_font collabtitle">In Collaboration with</h1>
-
+            <div className="flex flex-row flex-nowrap px-9 w-full align-center justify-center items-center h-[5vw]">
+                <p className="mq350:text-[18px] font-raleway font-black mq520:text-xl text-2xl sm:text-3xl md:text-4xl mr-4 mq520:text-wrap text-nowrap" style={{ color: '#3245A9' }}>In Collaboration with</p>
+                <hr className="w-full opacity-100 border-t-2 -translate-y-1" style={{ color: '#3245A9' }} />
             </div>
             <div className="sponsor_logo">
                 <div className="sponsorone"><img src={sponsor1} alt="" className="s_logo1" /></div>

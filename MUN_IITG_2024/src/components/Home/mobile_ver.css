@@ -1,13 +1,99 @@
 @media (orientation: portrait) {
-    .logo_container{
+
+    .no_logo {
+        display: none;
+    }
+
+    .ham_logo {
+        position: absolute;
+        z-index: 50;
+        width: 7.5vw;
+        height: auto;
+        top: 4vw;
+        right: 4vw;
+    }
+
+    .cross_logo {
+        position: absolute;
+        z-index: 50;
+        width: 5vw;
+        height: auto;
+        top: 4vw;
+        right: 4vw;
+    }
+
+    .hamburger_menu {
+        z-index: 40;
+        position: fixed;
+        right: 0;
+        height: 100vh;
+        width: 73.61vw;
+        background: #3245A9;
+        animation-name: hamburger;
+        animation-duration: 0.3s;
+        transition-timing-function: ease;
+    }
+
+    @keyframes hamburger {
+        0% {
+            width: 0;
+        }
+
+        100% {
+            width: 73.61vw;
+        }
+    }
+
+    /* .off_animation{
+        animation-name: off_animation !important;
+    }
+
+    @keyframes off_animation {
+        100% {
+            width: 0;
+        }
+
+        0% {
+            width: 73.61vw;
+        }
+    } */
+
+    .ham_box{
+        height: 67.78vw;
+        width: 62.5vw;
+        margin: 25vw auto 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .link_box{
+        height: 16.94vw;
+        width: 100%;
+        border-bottom: 0.27vw solid white;
+        border-radius: 0.4vw;
+        display: flex;
+        justify-content: end;
+        align-items: end;
+    }
+
+    .link_txt{
+        text-decoration: none;
+        color: white;
+        font-size: 5vw;
+        font-weight: 50;
+        padding: 0vw 2vw 2vw 0vw;
+    }
+
+    .logo_container {
         height: 135.55vw;
         position: relative;
-    }  
+    }
 
-    .color_logo{
+    .color_logo {
         height: 135.55vw;
     }
-/* 
+
+    /* 
     .color_logo_1{
         border-bottom-left-radius: 9.44vw;
     }
@@ -16,248 +102,255 @@
         border-bottom-right-radius: 9.44vw;
     } */
 
-    .img_logo_1,.img_logo_2,.img_logo_3,.img_logo_4{
+    .img_logo_1,
+    .img_logo_2,
+    .img_logo_3,
+    .img_logo_4 {
         bottom: 0vw !important;
         top: unset;
     }
 
-    .img_logo_5{
+    .img_logo_5 {
         height: 52.31vw;
         width: 58.61vw;
         left: 20.695vw;
         top: 30.55vw;
     }
 
-    .rel_box{
+    .rel_box {
         height: 100%;
         width: 100%;
     }
 
-    .cabi_font_1{
+    .cabi_font_1 {
         font-size: 14.75vw;
         line-height: 11.5vw;
     }
 
-    .cabi_font_2{
+    .cabi_font_2 {
         font-size: 23vw;
         line-height: 18vw;
     }
 
-    .cabi_font_3{
+    .cabi_font_3 {
         font-size: 10.27vw;
     }
 
-    .cabi_font_4{
+    .cabi_font_4 {
         font-size: 5.20vw;
         line-height: 5vw;
     }
 
-    .mons_font_1{
+    .mons_font_1 {
         font-size: 10.27vw;
         text-wrap: nowrap;
         line-height: 20vw;
     }
 
-    .mons_font_2{
+    .mons_font_2 {
         font-size: 5.20vw;
         text-wrap: nowrap;
         line-height: 0vw;
     }
 
-    .quotes_container{
+    .quotes_container {
         height: 91.94vw;
     }
 
-    .quotes_box{
+    .quotes_box {
         height: 48.33vw;
         width: 90.76vw;
     }
 
-    .mobile_quotes{
+    .mobile_quotes {
         display: flex;
         flex-direction: row;
         margin: 6vw 0vw;
     }
 
-    .quotes_img{
+    .quotes_img {
         display: block;
         height: 11.425vw;
         width: 16.61vw;
     }
 
-    .quotes_img_left{
+    .quotes_img_left {
         margin-right: 1.2vw;
     }
 
-    .quotes_img_right{
+    .quotes_img_right {
         margin-left: 1.2vw;
     }
 
-    .line_1{
+    .line_1 {
         font-size: 5.55vw;
     }
 
-    .line_2{
+    .line_2 {
         font-size: 7.54vw;
         text-align: center;
     }
 
-    .desktop_line{
+    .desktop_line {
         display: none;
     }
 
-    .hide_content{
+    .hide_content {
         display: none;
     }
 
-    .mobile_line{
+    .mobile_line {
         display: block;
     }
 
-    .show_content{
+    .show_content {
         display: flex;
     }
 
-    .line_3,.line_4{
+    .line_3,
+    .line_4 {
         font-size: 3.33vw;
     }
 
-    .shadow_box{
+    .shadow_box {
         display: none;
     }
 
-    .f_size_12{
+    .f_size_12 {
         font-size: 3.34vw;
     }
 
-    .roadmap_txt{
+    .roadmap_txt {
         color: #812046;
         padding-right: 5vw;
     }
 
-    .see_txt{
+    .see_txt {
         color: #812046;
     }
 
-    .comm_comp{
+    .comm_comp {
         height: 48.05vw;
         width: 88.88vw;
         border-radius: 2.77vw;
     }
 
-    .our_comm{
+    .our_comm {
         font-size: 6.66vw;
     }
 
-    .comm_post_container{
+    .comm_post_container {
         height: 218.88vw;
     }
 
-    .comp_title,.comp_title_2{
+    .comp_title,
+    .comp_title_2 {
         font-size: 5vw;
     }
 
-    .lok_sabha,.league{
+    .lok_sabha,
+    .league {
         height: 19.56vw;
         width: auto;
     }
 
-    .left_box{
+    .left_box {
         width: 29.44vw;
     }
 
-    .right_box{
+    .right_box {
         width: 63.88vw;
     }
 
-    .pie_chart_container{
+    .pie_chart_container {
         height: 127.77vw;
     }
 
-    .pie_circle_1{
+    .pie_circle_1 {
         height: 38.87vw;
         width: 38.87vw;
         top: 22.22vw;
         left: 41.30vw;
     }
 
-    .pie_circle_2{
+    .pie_circle_2 {
         height: 30.45vw;
         width: 30.45vw;
         top: 50.27vw;
         left: 16.20vw;
     }
 
-    .pie_circle_3{
+    .pie_circle_3 {
         height: 21.76vw;
         width: 21.76vw;
         top: 74.16vw;
         left: 42.28vw;
     }
 
-    .sep_class_1{
+    .sep_class_1 {
         font-size: 10.99vw;
         margin: auto;
     }
 
-    .sep_class_2{
+    .sep_class_2 {
         font-size: 8.61vw;
         margin: auto;
     }
 
-    .sep_class_3{
+    .sep_class_3 {
         font-size: 6.15vw;
         margin: auto;
     }
 
-    .heading_line,.para_line{
+    .heading_line,
+    .para_line {
         font-size: 3.33vw;
     }
 
-    .display_type{
+    .display_type {
         display: none;
     }
 
-    .head_lorem{
+    .head_lorem {
         font-size: 4.44vw;
     }
 
-    .zero_line{
+    .zero_line {
         display: none;
     }
 
-    .line_box_1{
+    .line_box_1 {
         top: 39vw;
         left: 23vw;
     }
 
-    .line_box_2{
+    .line_box_2 {
         top: 30vw;
-        right: 19.62vw;   
+        right: 19.62vw;
     }
 
-    .line_box_3{
+    .line_box_3 {
         width: 50vw;
         top: 23vw;
         left: 2.9vw;
     }
 
-    .ff_1{
+    .ff_1 {
         margin-left: 0 !important;
         margin-right: auto;
     }
 
-    .ff_2{
+    .ff_2 {
         margin-left: auto;
         margin-right: 2vw !important;
     }
 
-    .ff_3{
+    .ff_3 {
         margin-left: 7.2vw !important;
         margin-right: auto;
     }
 
-    .reviews_container{
+    .reviews_container {
         height: 67.5vw;
     }
 }

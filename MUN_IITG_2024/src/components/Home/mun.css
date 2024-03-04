@@ -353,7 +353,7 @@
     height: auto;
 }
 
-.league{
+.league {
     width: 12.14vw;
     height: auto;
 }
@@ -407,11 +407,11 @@
     color: var(--f-color-r);
 }
 
-.cf2{
+.cf2 {
     color: #3245A9;
 }
 
-.bg2{
+.bg2 {
     background-color: #3245A9;
 }
 
@@ -483,18 +483,18 @@
     font-size: 1.1vw;
 }
 
-.zero_line{
+.zero_line {
     height: 0;
     width: 100%;
     border: 0.069vw solid #192463;
     opacity: 0.37;
 }
 
-.line_box{
+.line_box {
     position: absolute;
 }
 
-.line_box_1{
+.line_box_1 {
     width: 30.19vw;
     display: flex;
     flex-direction: column;
@@ -503,7 +503,7 @@
     left: 3.7vw;
 }
 
-.line_box_2{
+.line_box_2 {
     width: 20.22vw;
     display: flex;
     flex-direction: column;
@@ -512,7 +512,7 @@
     right: 4.62vw;
 }
 
-.line_box_3{
+.line_box_3 {
     width: 24.30vw;
     display: flex;
     flex-direction: column;
@@ -521,137 +521,173 @@
     left: 3.9vw;
 }
 
-.ff_1{
+.ff_1 {
     margin-right: 4.1vw;
 }
 
-.ff_2{
+.ff_2 {
     margin-left: 2.65vw;
 }
 
-.ff_3{
+.ff_3 {
     margin-right: 1.95vw;
 }
 
-.boldness{
+.boldness {
     font-weight: 450;
 }
 
-.review_f_size{
+.review_f_size {
     font-size: 1vw;
 }
 
-.review_f_size_2{
+.review_f_size_2 {
     font-size: 0.896vw;
 }
 
-.review_f_size_3{
+.review_f_size_3 {
     font-size: 0.828vw;
 }
 
-.review_f_size_4{
+.review_f_size_4 {
     font-size: 0.74vw;
 }
-.sponsor_logo{
 
-display: flex;
-flex-direction: row;
-justify-content: space-around;
-margin-bottom: 10vw;
-margin-top: 5vw;
+.sponsor_logo {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 10vw;
+    margin-top: 5vw;
 }
 
-.sponsorone{
+.sponsorone {
     margin-left: 13%;
 }
-.sponsorthree{
+
+.sponsorthree {
     margin-right: 13%;
 }
-.s_logo1{
+
+.s_logo1 {
     height: 10vw;
     width: 10vw;
 }
-.s_logo3{
+.s_logo2{
+    height:10vw;
+    width: 15
+    vw;
+}
+.s_logo3 {
     height: 10vw;
     width: 10vw;
 }
-.collabtitle{
+
+.collabtitle {
     font-size: 2.57vw !important;
 }
-.review_container{
-position: relative;
-/* overflow: hidden; */
-display: flex;
-justify-content: center;;
-align-items: center;
- background-color: #FFC2AF!important;
- padding-top: 2vw;
- padding-bottom: 2vw;
- margin-bottom: 4vw;
- }
-.carosol_container{
-width: 75% !important;
 
-height: 17.28vw;
-margin-top: 1vw;
+.review_container {
+    position: relative;
+    /* overflow: hidden; */
+    display: flex;
+    justify-content: center;
+    ;
+    align-items: center;
+    background-color:#FFF7E4!important;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    margin-bottom: 4vw;
+}
+
+.carosol_container {
+    width: 75% !important;
+
+    height: 17.28vw;
+    margin-top: 1vw;
 
 
 }
-.modified{
+
+.modified {
     background-color: #FFC2AF;
     padding-bottom: 3vw;
     height: 9vw !important;
     padding-top: 3vw;
 }
-.reel_container{
+
+.reel_container {
     /* position: absolute;
     bottom: ; */
     position: relative;
     bottom: 3vw;
     border-radius: 0.61vw;
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: -ms-autohiding-scrollbar; /* IE/Edge */
-    overflow: -moz-scrollbars-none; /* Firefox */
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    /* IE/Edge */
+    overflow: -moz-scrollbars-none;
+    /* Firefox */
     /* box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.6);  */
 
 }
-.color{
+
+.color {
     /* position: absolute !important; */
-    z-index:100;
+    z-index: 100;
     background-color: #FFC2AF;
     /* height: 5vw; */
 }
 
 .bubble-container {
     position: fixed;
-    bottom: 20px; /* Adjust as needed */
-    right: 10px; /* Adjust as needed */
+    bottom: 20px;
+    /* Adjust as needed */
+    right: 10px;
+    /* Adjust as needed */
     z-index: 999;
     width: 4vw;
     height: 4vw;
     background-color: #0758ae;
     border-radius: 50%;
-    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.6); 
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.6);
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .bubble {
- /* Bubble background color */
-    color: #fff; /* Text color */
-text-decoration: none;
+}
+
+.bubble {
+    /* Bubble background color */
+    color: #fff;
+    /* Text color */
+    text-decoration: none;
     /* Increased height */
-   
-   font-size: 1vw;/* Should be equal to the height */
-   /* Optional: Adds a shadow */
-    cursor: pointer; /* Optional: Change cursor on hover */
-  }
-  
-  
-  .bubble:hover {
-    background-color: #0056b3; /* Change background color on hover */
-  }
-  .modified_review{
+
+    font-size: 1vw;
+    /* Should be equal to the height */
+    /* Optional: Adds a shadow */
+    cursor: pointer;
+    /* Optional: Change cursor on hover */
+}
+
+
+.bubble:hover {
+    background-color: #0056b3;
+    /* Change background color on hover */
+}
+
+.modified_review {
     font-size: 2.5vw;
-  }
+    position: relative;
+    
+}
+.line_class{
+    position: absolute;
+    top: 50%;
+    left: calc(50% + 50px);
+    width: 2px;
+    height: calc(100% - 100px);
+    background-color: black;
+    transform: translateY(-50%);
+}
