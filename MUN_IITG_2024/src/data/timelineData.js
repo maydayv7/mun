@@ -17,9 +17,9 @@ const data = {
        
     '2024':[ 
         ['Lok Sabha', LokSabha, 'Election Evolution', 'This committee is committed to promoting meaningful discussions and improving accessibility in our democratic process, with the ultimate goal of strengthening the Indian democratic system. ', 'https://drive.google.com/drive/folders/1PO7svDsBDw-akYZKJrp8tGtKO6Suc-_F'],
-        ['UN Ocean Conference', LokSabha, 'Battle Below', 'This conference is set to delve into the intricate challenges posed by water pollution on a global scale. Alongside this, the discussions will encompass the far-reaching consequences of armed conflicts on marine ecosystems, unraveling the complex relationship between warfare and aquatic life', '/bgURL'],
-        ['Lok Sabha', LokSabha, 'Agenda', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Et beatae similique molestiae quam expedita debitis illum rem necessitatibus voluptatibus, natus officia ipsa voluptatem veritatis labore quod! Esse ipsam doloremque doloribus!', '/bgURL'],
-        ['Lok Sabha', LokSabha, 'Agenda', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Et beatae similique molestiae quam expedita debitis illum rem necessitatibus voluptatibus, natus officia ipsa voluptatem veritatis labore quod! Esse ipsam doloremque doloribus!', '/bgURL']
+        ['UN Ocean Conference', LokSabha, 'Battle Below', 'This conference is set to delve into the intricate challenges posed by water pollution on a global scale. Alongside this, the discussions will encompass the far-reaching consequences of armed conflicts on marine ecosystems, unraveling the complex relationship between warfare and aquatic life', 'https://drive.google.com/drive/folders/1PO7svDsBDw-akYZKJrp8tGtKO6Suc-_F'],
+        ['UNHRC', LokSabha, ' Beyond Broken Borders', ' A Call to Action on the Human Cost of War This committee is dedicated to highlighting the plight experienced by refugees and internally displaced individuals.', 'https://drive.google.com/drive/folders/1PO7svDsBDw-akYZKJrp8tGtKO6Suc-_F'],
+        ['League Of Nations', LokSabha, 'Harmony Haven', 'This conference is set to delve into the failures and shortcomings of the League of Nations. This continuous crisis committee will keep the delegates on their toes as they brainstorm ways to ensure the League of Nations comes up with peaceful and beneficial solutions for a wide range of crises!', 'https://drive.google.com/drive/folders/1PO7svDsBDw-akYZKJrp8tGtKO6Suc-_F']
      ],
 }
 
