@@ -1,5 +1,6 @@
 import "./mun.css";
 import "./position.css";
+import "./mobile_ver.css";
 import { Carousel } from '@heathmont/moon-core-tw';
 
 
@@ -36,6 +37,8 @@ import sponsor2 from './resources/sponsor2.png';
 import sponsor3 from './resources/sponsor3.png';
 import { useState } from "react";
 import Footer from "../general/Footerm";
+import quotes_left from "./resources/quotes_left.png";
+import quotes_right from "./resources/quotes_right.png";
 
 const Mun = () => {
 
@@ -50,6 +53,14 @@ const Mun = () => {
     const handleRightArrowClick = () => {
         setCurrentIndex(prevIndex => (prevIndex === Data.length - 1 ? 0 : prevIndex + 1));
     };
+
+    const [state, setState] = useState("hide_content mobile_line_2");
+
+    function showMore() {
+        setState("show_content mobile_line_2");
+    }
+
+
     return (
 
 
@@ -66,10 +77,10 @@ const Mun = () => {
                 <img src={logo_3} alt="" className="img_logo img_logo_3" />
                 <div className="img_logo img_logo_5">
                     <div className="rel_box">
-                        <p className="font_logo cabi_font_1">IITGMUN</p>
-                        <p className="font_logo cabi_font_2">2024</p>
-                        <p className="font_logo mons_font_1">Edition XVI</p>
-                        <p className="font_logo mons_font_2">8th - 10th March 2024</p>
+                        <p className="font_logo cabi_font_1 all_font pad">IITGMUN</p>
+                        <p className="font_logo cabi_font_2 all_font pad">2024</p>
+                        <p className="font_logo mons_font_1 all_font pad">Edition XVI</p>
+                        <p className="font_logo mons_font_2 all_font pad">8th - 10th March 2024</p>
                     </div>
                 </div>
 
@@ -77,7 +88,12 @@ const Mun = () => {
             <div className="quotes_container">
                 <div className="quotes_box">
                     <p className="font_cal mons_font line_1">"That the powerful play goes on, and you may contribute a verse."</p>
-                    <p className="font_cal cabi_font line_2">"What verse shall be yours?"</p>
+                    <div className="mobile_quotes">
+                        <img src={quotes_left} className="quotes_img quotes_img_left" alt="" />
+                        <p className="font_cal cabi_font line_2 desktop_line">"What verse shall be yours?"</p>
+                        <p className="font_cal cabi_font line_2 mobile_line">What verse shall be yours?</p>
+                        <img src={quotes_right} className="quotes_img quotes_img_right" alt="" />
+                    </div>
                     <p className="font_cal mons_font line_3">O me! O life!, Walt Whitman</p>
                     <p className="font_cal mons_font line_4">Dead Poets society</p>
                 </div>
@@ -99,19 +115,26 @@ const Mun = () => {
                     </div>
                     <div className="right_box">
                         <div className="center_box">
-                            <p className="mons_font comp_lorem all_font">Lorem ipsum dolor, sit amet
+                            <p className="mons_font comp_lorem all_font display_type">Lorem ipsum dolor, sit amet
                                 consectetur adipisicing elit. Tempora aliquid excepturi modi,
                                 nesciunt veritatis facere, fugiat quas nam cum quo odio at! Hic, voluptatibus voluptatum.
                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, dicta!
 
                             </p>
                             <h1 className="cabi_font head_lorem cf1 all_font">Election Evolution</h1>
-                            <p className="mons_font comp_lorem lower_para all_font">Lorem ipsum dolor sit amet consectetur
+                            <p className="mons_font comp_lorem lower_para all_font display_type">Lorem ipsum dolor sit amet consectetur
                                 adipisicing elit. Optio ratione accusamus, perspiciatis dolorem ipsa laborum porro
                                 hic placeat aliquid? Repudiandae, iste libero. Sapiente, soluta dolore dolorem
                                 distinctio nisi sequi earum tempora sunt fuga. Possimus qui, odio a hic perferendis
                                 repellat nobis consequatur exercitationem incidunt necessitatibus.
                             </p>
+                            <p className="mobile_line f_size_12 roadmap_txt all_font mons_font">
+                                A Roadmap to Strengthening
+                                Democracy in India
+                            </p>
+                            <a onClick={showMore} className="see_more f_size_12 mobile_line see_txt all_font mons_font">
+                                See More
+                            </a>
                         </div>
 
                         <img src={img_1} className="img_1" alt="" />
@@ -125,19 +148,26 @@ const Mun = () => {
                     </div>
                     <div className="right_box">
                         <div className="center_box">
-                            <p className="mons_font comp_lorem all_font">Lorem ipsum dolor, sit amet
+                            <p className="mons_font comp_lorem all_font display_type">Lorem ipsum dolor, sit amet
                                 consectetur adipisicing elit. Tempora aliquid excepturi modi,
                                 nesciunt veritatis facere, fugiat quas nam cum quo odio at! Hic, voluptatibus voluptatum.
                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, dicta!
 
                             </p>
                             <h1 className="cabi_font head_lorem cf2 all_font">Election Evolution</h1>
-                            <p className="mons_font comp_lorem lower_para all_font">Lorem ipsum dolor sit amet consectetur
+                            <p className="mons_font comp_lorem lower_para all_font display_type">Lorem ipsum dolor sit amet consectetur
                                 adipisicing elit. Optio ratione accusamus, perspiciatis dolorem ipsa laborum porro
                                 hic placeat aliquid? Repudiandae, iste libero. Sapiente, soluta dolore dolorem
                                 distinctio nisi sequi earum tempora sunt fuga. Possimus qui, odio a hic perferendis
                                 repellat nobis consequatur exercitationem incidunt necessitatibus.
                             </p>
+                            <p className="mobile_line f_size_12 roadmap_txt all_font mons_font">
+                                A Roadmap to Strengthening
+                                Democracy in India
+                            </p>
+                            <a onClick={showMore} className="see_more f_size_12 mobile_line see_txt all_font mons_font">
+                                See More
+                            </a>
                         </div>
 
                         <img src={img_3} className="img_1" alt="" />
@@ -151,19 +181,26 @@ const Mun = () => {
                     </div>
                     <div className="right_box">
                         <div className="center_box">
-                            <p className="mons_font comp_lorem all_font">Lorem ipsum dolor, sit amet
+                            <p className="mons_font comp_lorem all_font display_type">Lorem ipsum dolor, sit amet
                                 consectetur adipisicing elit. Tempora aliquid excepturi modi,
                                 nesciunt veritatis facere, fugiat quas nam cum quo odio at! Hic, voluptatibus voluptatum.
                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, dicta!
 
                             </p>
                             <h1 className="cabi_font head_lorem cf1 all_font">Election Evolution</h1>
-                            <p className="mons_font comp_lorem lower_para all_font">Lorem ipsum dolor sit amet consectetur
+                            <p className="mons_font comp_lorem lower_para all_font display_type">Lorem ipsum dolor sit amet consectetur
                                 adipisicing elit. Optio ratione accusamus, perspiciatis dolorem ipsa laborum porro
                                 hic placeat aliquid? Repudiandae, iste libero. Sapiente, soluta dolore dolorem
                                 distinctio nisi sequi earum tempora sunt fuga. Possimus qui, odio a hic perferendis
                                 repellat nobis consequatur exercitationem incidunt necessitatibus.
                             </p>
+                            <p className="mobile_line f_size_12 roadmap_txt all_font mons_font">
+                                A Roadmap to Strengthening
+                                Democracy in India
+                            </p>
+                            <a onClick={showMore} className="see_more f_size_12 mobile_line see_txt all_font mons_font">
+                                See More
+                            </a>
                         </div>
                         <img src={img_1} className="img_1" alt="" />
                         <img src={img_2} className="img_2" alt="" />
@@ -176,18 +213,25 @@ const Mun = () => {
                     </div>
                     <div className="right_box">
                         <div className="center_box">
-                            <p className="mons_font comp_lorem all_font">Lorem ipsum dolor, sit amet
+                            <p className="mons_font comp_lorem all_font display_type">Lorem ipsum dolor, sit amet
                                 consectetur adipisicing elit. Tempora aliquid excepturi modi,
                                 nesciunt veritatis facere, fugiat quas nam cum quo odio at! Hic, voluptatibus voluptatum.
                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, dicta!
                             </p>
                             <h1 className="cabi_font head_lorem cf2 all_font">Beyond bork bord</h1>
-                            <p className="mons_font comp_lorem lower_para all_font">Lorem ipsum dolor sit amet consectetur
+                            <p className="mons_font comp_lorem lower_para all_font display_type">Lorem ipsum dolor sit amet consectetur
                                 adipisicing elit. Optio ratione accusamus, perspiciatis dolorem ipsa laborum porro
                                 hic placeat aliquid? Repudiandae, iste libero. Sapiente, soluta dolore dolorem
                                 distinctio nisi sequi earum tempora sunt fuga. Possimus qui, odio a hic perferendis
                                 repellat nobis consequatur exercitationem incidunt necessitatibus.
                             </p>
+                            <p className="mobile_line f_size_12 roadmap_txt all_font mons_font">
+                                A Roadmap to Strengthening
+                                Democracy in India
+                            </p>
+                            <a onClick={showMore} className="see_more f_size_12 mobile_line see_txt all_font mons_font">
+                                See More
+                            </a>
                         </div>
                         <img src={img_1} className="img_1" alt="" />
                         <img src={img_2} className="img_2" alt="" />
