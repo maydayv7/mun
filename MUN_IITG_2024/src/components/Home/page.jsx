@@ -84,10 +84,14 @@ const Mun = () => {
             </div>
 
             <div className="comm_post_container">
-                <div className="comm_title_box">
+                {/* <div className="comm_title_box">
                     <h1 className="cabi_font our_comm all_font">Our Committees</h1>
 
-                </div>
+                </div> */}
+                  <div className="flex flex-row flex-nowrap px-9 w-full align-center justify-center items-center h-[5vw]">
+            <p className="mq350:text-[18px] font-raleway font-black mq520:text-xl text-2xl sm:text-3xl md:text-4xl mr-4 mq520:text-wrap text-nowrap" style={{color:'#3245A9'}}>Our Commities </p>
+            <hr className="w-full opacity-100 border-t-2 -translate-y-1" style={{color:'#3245A9'}}/>
+        </div>
                 <div className="comm_comp">
                     <div className="left_box">
                         <p className="comp_title cabi_font all_font cf1">Lok Sabha</p>
@@ -329,11 +333,14 @@ const Mun = () => {
       </Carousel>
     </div> */}
     
-            <div className="comm_title_box modified">
+            {/* <div className="comm_title_box modified">
                 <h1 className="cabi_font our_comm all_font modified_review">Let read some reviews</h1>
-
-            </div>
-
+<hr className="line_class"></hr>
+            </div> */}
+  <div className="flex flex-row flex-nowrap px-9 w-full align-center justify-center items-center bg-[#FFF7E4] h-[8vw]">
+            <p className="mq350:text-[18px] font-raleway font-black mq520:text-xl text-2xl sm:text-3xl md:text-4xl mr-4 mq520:text-wrap text-nowrap" style={{color:'#3245A9'}}>Lets read some reviews</p>
+            <hr className="w-full opacity-100 border-t-2 -translate-y-1" style={{color:'#3245A9'}}/>
+        </div>
             <div className="review_container">
 
                 <Carousel className='carosol_container' >
@@ -389,9 +396,9 @@ const Mun = () => {
             </div>
            
  
-            <div className="comm_title_box ">
-                <h1 className="cabi_font our_comm all_font collabtitle">In Collaboration with</h1>
-
+            <div className="flex flex-row flex-nowrap px-9 w-full align-center justify-center items-center h-[5vw]">
+            <p className="mq350:text-[18px] font-raleway font-black mq520:text-xl text-2xl sm:text-3xl md:text-4xl mr-4 mq520:text-wrap text-nowrap" style={{color:'#3245A9'}}>In Collaboration with</p>
+            <hr className="w-full opacity-100 border-t-2 -translate-y-1" style={{color:'#3245A9'}}/>
             </div>
             <div className="sponsor_logo">
                 <div className="sponsorone"><img src={sponsor1} alt="" className="s_logo1" /></div>
