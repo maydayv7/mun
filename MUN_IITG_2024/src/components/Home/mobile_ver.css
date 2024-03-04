@@ -1,30 +1,52 @@
 @media (orientation: portrait) {
 
+    .blue_block{
+        height: 15.27vw;
+        width: 100vw;
+        background-color: #3245A9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ham_box_senior{
+        width: 85.54vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .home_logo_img{
+        height: 8.52vw;
+        width: 10.83vw;
+    }
+
     .no_logo {
         display: none;
     }
 
     .ham_logo {
-        position: absolute;
         z-index: 50;
         width: 7.5vw;
         height: auto;
-        top: 4vw;
-        right: 4vw;
     }
 
     .cross_logo {
-        position: absolute;
         z-index: 50;
         width: 5vw;
         height: auto;
-        top: 4vw;
-        right: 4vw;
+    }
+
+    .fix_position{
+        position: absolute;
+        top: 5vw;
+        right: 8vw;        
     }
 
     .hamburger_menu {
-        z-index: 40;
+        z-index: 100;
         position: fixed;
+        top: 0;
         right: 0;
         height: 100vh;
         width: 73.61vw;
