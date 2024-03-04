@@ -35,7 +35,7 @@ import sealbase from './resources/sealbase.png';
 import sponsor1 from './resources/sponsor1.png';
 import sponsor2 from './resources/sponsor2.png';
 import sponsor3 from './resources/sponsor3.png';
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import Footer from "../general/Footerm";
 import quotes_left from "./resources/quotes_left.png";
 import quotes_right from "./resources/quotes_right.png";
@@ -46,10 +46,24 @@ import unhrc from "./resources/UNHRC.png";
 import unoc from "./resources/UNOC.png";
 
 const Mun = () => {
-
+    const [isMobileView, setIsMobileView] = useState(false);
     const [currentIndex, setCurrentIndex] = useState(0);
     const items = Array.from({ length: 25 }, (index) => index);
     // Define a function to handle left arrow click
+    useEffect(() => {
+        const handleResize = () => {
+          setIsMobileView(window.innerWidth <= 600); // Adjust the width breakpoint as needed
+        };
+    
+        // Initial check on component mount
+        handleResize();
+    
+        window.addEventListener('resize', handleResize);
+    
+        return () => {
+          window.removeEventListener('resize', handleResize);
+        };
+      }, []);
     const handleLeftArrowClick = () => {
         setCurrentIndex(prevIndex => (prevIndex === 0 ? Data.length - 1 : prevIndex - 1));
     };
@@ -121,7 +135,7 @@ const Mun = () => {
                     </div>
                 </div>
             </div>
-            <Navbar />
+            {!isMobileView && <Navbar/>}
             <div className="logo_container">
                 <div className="color_logo color_logo_1"></div>
                 <div className="color_logo color_logo_2"></div>
