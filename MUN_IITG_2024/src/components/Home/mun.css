@@ -37,7 +37,6 @@
 .up_box{
     height: 45.27vw;
     width: 100%;
-    border: 1px solid red;
     display: flex;
     flex-direction: row;
 }
@@ -53,7 +52,6 @@
 
 .r_box{
     width: 58.33vw;
-    border: 1px solid red;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,7 +60,19 @@
 .down_box{
     height: 49.73vw;
     width: 100%;
-    border: 1px solid red;
+}
+
+.down_txt{
+    padding: 0vw 4vw;
+}
+
+.see_less{
+    color: #812046;
+}
+
+
+.t3{
+    line-height: 2vw;
 }
 
 .mons_font {

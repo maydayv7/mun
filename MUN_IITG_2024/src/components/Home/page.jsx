@@ -39,6 +39,9 @@ import { useState } from "react";
 import Footer from "../general/Footerm";
 import quotes_left from "./resources/quotes_left.png";
 import quotes_right from "./resources/quotes_right.png";
+import ham_logo from "./resources/Vector 11.png";
+import cross_logo from "./resources/Vector 10.png";
+import home_logo from "./resources/logo_home_2.png";
 
 const Mun = () => {
 
@@ -55,9 +58,18 @@ const Mun = () => {
     };
 
     const [state, setState] = useState("hide_content mobile_line_2");
+    var [state2, setState2] = useState(true);
 
     function showMore() {
         setState("show_content mobile_line_2");
+    }
+
+    function seeLess() {
+        setState("hide_content mobile_line_2");
+    }
+
+    function handleClick() {
+        setState2(!state2);
     }
 
 
@@ -65,7 +77,51 @@ const Mun = () => {
 
 
         <div className="mun_container">
-                <Navbar />
+
+            <div className="blue_block mobile_line_2">
+                <div className="ham_box_senior">
+                    <img src={home_logo} className="home_logo_img" />
+                    <img src={ham_logo} onClick={handleClick} className={state2 ? "ham_logo" : "no_logo"} />
+                    <img src={cross_logo} onClick={handleClick} className={state2 ? "no_logo" : "cross_logo"} />
+                </div>
+                <div className={state2 ? "no_logo" : "hamburger_menu"}>
+                    <img src={ham_logo} onClick={handleClick} className={state2 ? "ham_logo fix_position" : "no_logo"} />
+                    <img src={cross_logo} onClick={handleClick} className={state2 ? "no_logo" : "cross_logo fix_position"} />
+                    <div className="ham_box">
+                        <div className="link_box"><a href="#" className="link_txt">Home</a></div>
+                        <div className="link_box"><a href="#" className="link_txt">About Us</a></div>
+                        <div className="link_box"><a href="#" className="link_txt">Previous Editions</a></div>
+                        <div className="link_box"><a href="#" className="link_txt">Contact Us</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div className={state}>
+                <div className="inside_cont">
+                    <div className="up_box">
+                        <div className="l_box">
+                            <p className="comp_title cabi_font all_font cf1">Lok Sabha</p>
+                            <img src={lok_sabha} className="lok_sabha" alt="" />
+                        </div>
+                        <div className="r_box">
+                            <p className="up_txt f_size_12 all_font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
+                                consectetur. Laudantium eveniet asperiores iure, sunt hic nobis voluptatibus libero recusandae cupiditate vero sequi
+                            </p>
+                        </div>
+                    </div>
+                    <div className="down_box">
+                        <h1 className="cabi_font head_lorem cf1 all_font down_txt t1">Election Evolution</h1>
+                        <p className="mons_font all_font f_size_12 down_txt t2">Lorem ipsum dolor, sit amet
+                            consectetur adipisicing elit. Tempora aliquid excepturi modi,
+                            nesciunt veritatis facere, fugiat quas nam cum quo odio at! Hic, voluptatibus voluptatum.
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, dicta!
+
+                        </p>
+                        <a onClick={seeLess} className="see_less f_size_12 down_txt all_font t3">See Less</a>
+                    </div>
+                </div>
+            </div>
+            <Navbar />
             <div className="logo_container">
                 <div className="color_logo color_logo_1"></div>
                 <div className="color_logo color_logo_2"></div>
@@ -104,10 +160,10 @@ const Mun = () => {
                     <h1 className="cabi_font our_comm all_font">Our Committees</h1>
 
                 </div> */}
-                  <div className="flex flex-row flex-nowrap px-9 w-full align-center justify-center items-center h-[5vw]">
-            <p className="mq350:text-[18px] font-raleway font-black mq520:text-xl text-2xl sm:text-3xl md:text-4xl mr-4 mq520:text-wrap text-nowrap" style={{color:'#3245A9'}}>Our Commities </p>
-            <hr className="w-full opacity-100 border-t-2 -translate-y-1" style={{color:'#3245A9'}}/>
-        </div>
+                <div className="flex flex-row flex-nowrap px-9 w-full align-center justify-center items-center h-[5vw]">
+                    <p className="mq350:text-[18px] font-raleway font-black mq520:text-xl text-2xl sm:text-3xl md:text-4xl mr-4 mq520:text-wrap text-nowrap" style={{ color: '#3245A9' }}>Our Commities </p>
+                    <hr className="w-full opacity-100 border-t-2 -translate-y-1" style={{ color: '#3245A9' }} />
+                </div>
                 <div className="comm_comp">
                     <div className="left_box">
                         <p className="comp_title cabi_font all_font cf1">Lok Sabha</p>
@@ -376,15 +432,12 @@ const Mun = () => {
         </div>
       </Carousel>
     </div> */}
-    
-            {/* <div className="comm_title_box modified">
-                <h1 className="cabi_font our_comm all_font modified_review">Let read some reviews</h1>
-<hr className="line_class"></hr>
-            </div> */}
-  <div className="flex flex-row flex-nowrap px-9 w-full align-center justify-center items-center bg-[#FFF7E4] h-[8vw]">
-            <p className="mq350:text-[18px] font-raleway font-black mq520:text-xl text-2xl sm:text-3xl md:text-4xl mr-4 mq520:text-wrap text-nowrap" style={{color:'#3245A9'}}>Lets read some reviews</p>
-            <hr className="w-full opacity-100 border-t-2 -translate-y-1" style={{color:'#3245A9'}}/>
-        </div>
+
+            <div className="comm_title_box modified">
+                <h1 className="cabi_font our_comm all_font modified_review">Reviews</h1>
+
+            </div>
+
             <div className="review_container">
 
                 <Carousel className='carosol_container' >
@@ -427,7 +480,7 @@ const Mun = () => {
 
                                     </Carousel.Item>
                                 ))}
-                                           <div className="color"></div>
+                                <div className="color"></div>
                             </Carousel.Reel>
                             {/* <Carousel.RightArrow>
             <ControlsChevronRightSmall />
@@ -438,11 +491,11 @@ const Mun = () => {
 
                 </Carousel>
             </div>
-           
- 
+
+
             <div className="flex flex-row flex-nowrap px-9 w-full align-center justify-center items-center h-[5vw]">
-            <p className="mq350:text-[18px] font-raleway font-black mq520:text-xl text-2xl sm:text-3xl md:text-4xl mr-4 mq520:text-wrap text-nowrap" style={{color:'#3245A9'}}>In Collaboration with</p>
-            <hr className="w-full opacity-100 border-t-2 -translate-y-1" style={{color:'#3245A9'}}/>
+                <p className="mq350:text-[18px] font-raleway font-black mq520:text-xl text-2xl sm:text-3xl md:text-4xl mr-4 mq520:text-wrap text-nowrap" style={{ color: '#3245A9' }}>In Collaboration with</p>
+                <hr className="w-full opacity-100 border-t-2 -translate-y-1" style={{ color: '#3245A9' }} />
             </div>
             <div className="sponsor_logo">
                 <div className="sponsorone"><img src={sponsor1} alt="" className="s_logo1" /></div>
