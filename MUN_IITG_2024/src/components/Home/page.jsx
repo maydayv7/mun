@@ -41,7 +41,7 @@ import quotes_left from "./resources/quotes_left.png";
 import quotes_right from "./resources/quotes_right.png";
 import ham_logo from "./resources/Vector 11.png";
 import cross_logo from "./resources/Vector 10.png";
-import home_logo from "./resources/logo_home_2.png";
+import home_logo from "./resources/Frame 72.png";
 
 const Mun = () => {
 
@@ -77,25 +77,6 @@ const Mun = () => {
 
 
         <div className="mun_container">
-
-            <div className="blue_block mobile_line_2">
-                <div className="ham_box_senior">
-                    <img src={home_logo} className="home_logo_img" />
-                    <img src={ham_logo} onClick={handleClick} className={state2 ? "ham_logo" : "no_logo"} />
-                    <img src={cross_logo} onClick={handleClick} className={state2 ? "no_logo" : "cross_logo"} />
-                </div>
-                <div className={state2 ? "no_logo" : "hamburger_menu"}>
-                    <img src={ham_logo} onClick={handleClick} className={state2 ? "ham_logo fix_position" : "no_logo"} />
-                    <img src={cross_logo} onClick={handleClick} className={state2 ? "no_logo" : "cross_logo fix_position"} />
-                    <div className="ham_box">
-                        <div className="link_box"><a href="#" className="link_txt">Home</a></div>
-                        <div className="link_box"><a href="#" className="link_txt">About Us</a></div>
-                        <div className="link_box"><a href="#" className="link_txt">Previous Editions</a></div>
-                        <div className="link_box"><a href="#" className="link_txt">Contact Us</a></div>
-                    </div>
-                </div>
-            </div>
-
             <div className={state}>
                 <div className="inside_cont">
                     <div className="up_box">
@@ -118,6 +99,23 @@ const Mun = () => {
 
                         </p>
                         <a onClick={seeLess} className="see_less f_size_12 down_txt all_font t3">See Less</a>
+                    </div>
+                </div>
+            </div>
+            <div className="blue_block mobile_line_2">
+                <div className="ham_box_senior">
+                    <img src={home_logo} className="home_logo_img" />
+                    <img src={ham_logo} onClick={handleClick} className={state2 ? "ham_logo" : "no_logo"} />
+                    <img src={cross_logo} onClick={handleClick} className={state2 ? "no_logo" : "cross_logo"} />
+                </div>
+                <div className={state2 ? "no_logo" : "hamburger_menu"}>
+                    <img src={ham_logo} onClick={handleClick} className={state2 ? "ham_logo fix_position" : "no_logo"} />
+                    <img src={cross_logo} onClick={handleClick} className={state2 ? "no_logo" : "cross_logo fix_position"} />
+                    <div className="ham_box">
+                        <div className="link_box"><a href="#" className="link_txt">Home</a></div>
+                        <div className="link_box"><a href="#" className="link_txt">About Us</a></div>
+                        <div className="link_box"><a href="#" className="link_txt">Previous Editions</a></div>
+                        <div className="link_box"><a href="#" className="link_txt">Contact Us</a></div>
                     </div>
                 </div>
             </div>

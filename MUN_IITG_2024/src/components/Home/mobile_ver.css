@@ -1,6 +1,7 @@
 @media (orientation: portrait) {
 
     .blue_block{
+        position: relative;
         height: 15.27vw;
         width: 100vw;
         background-color: #3245A9;
@@ -17,8 +18,9 @@
     }
 
     .home_logo_img{
-        height: 8.52vw;
-        width: 10.83vw;
+        height: auto;
+        width: 27vw;
+        margin-left: -7vw;
     }
 
     .no_logo {
@@ -27,20 +29,20 @@
 
     .ham_logo {
         z-index: 50;
-        width: 7.5vw;
+        width: 10.5vw;
         height: auto;
     }
 
     .cross_logo {
         z-index: 50;
-        width: 5vw;
+        width: 7vw;
         height: auto;
     }
 
     .fix_position{
         position: absolute;
-        top: 5vw;
-        right: 8vw;        
+        top: 4vw;
+        right: 7vw;        
     }
 
     .hamburger_menu {
