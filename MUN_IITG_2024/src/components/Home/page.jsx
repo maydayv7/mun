@@ -451,8 +451,8 @@ const Mun = () => {
             </div>
 
             <Footer />
-            <div class="bubble-container">
-                <a href="form.html" class="bubble">
+            <div className="bubble-container">
+                <a href="form.html" className="bubble">
                     Apply
                 </a>
             </div>

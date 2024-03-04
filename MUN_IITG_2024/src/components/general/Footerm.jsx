@@ -10,10 +10,10 @@ export default function Footer() {
                
             </div>
             <div className="social">
-            <i class="bi bi-instagram fs-3"></i>
-            <i class="bi bi-linkedin fs-3"></i>
-            <i class="bi bi-facebook fs-3"></i>
-            <i class="bi bi-twitter-x fs-3"></i>
+            <i className="bi bi-instagram fs-3"></i>
+            <i className="bi bi-linkedin fs-3"></i>
+            <i className="bi bi-facebook fs-3"></i>
+            <i className="bi bi-twitter-x fs-3"></i>
 
             </div>
             <p>Designed by WXY ans </p>
