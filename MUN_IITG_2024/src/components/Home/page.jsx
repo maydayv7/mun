@@ -60,12 +60,41 @@ const Mun = () => {
         setState("show_content mobile_line_2");
     }
 
+    function seeLess(){
+        setState("hide_content mobile_line_2");
+    }
+
 
     return (
 
 
         <div className="mun_container">
-                <Navbar />
+            <div className={state}>
+                <div className="inside_cont">
+                    <div className="up_box">
+                        <div className="l_box">
+                            <p className="comp_title cabi_font all_font cf1">Lok Sabha</p>
+                            <img src={lok_sabha} className="lok_sabha" alt="" />
+                        </div>
+                        <div className="r_box">
+                            <p className="up_txt f_size_12 all_font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
+                                consectetur. Laudantium eveniet asperiores iure, sunt hic nobis voluptatibus libero recusandae cupiditate vero sequi
+                            </p>
+                        </div>
+                    </div>
+                    <div className="down_box">
+                        <h1 className="cabi_font head_lorem cf1 all_font down_txt t1">Election Evolution</h1>
+                        <p className="mons_font all_font f_size_12 down_txt t2">Lorem ipsum dolor, sit amet
+                            consectetur adipisicing elit. Tempora aliquid excepturi modi,
+                            nesciunt veritatis facere, fugiat quas nam cum quo odio at! Hic, voluptatibus voluptatum.
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, dicta!
+
+                        </p>
+                        <a onClick={seeLess} className="see_less f_size_12 down_txt all_font t3">See Less</a>
+                    </div>
+                </div>
+            </div>
+            <Navbar />
             <div className="logo_container">
                 <div className="color_logo color_logo_1"></div>
                 <div className="color_logo color_logo_2"></div>
@@ -372,9 +401,9 @@ const Mun = () => {
         </div>
       </Carousel>
     </div> */}
-    
+
             <div className="comm_title_box modified">
-                <h1 className="cabi_font our_comm all_font modified_review">Let read some reviews</h1>
+                <h1 className="cabi_font our_comm all_font modified_review">Reviews</h1>
 
             </div>
 
@@ -420,7 +449,7 @@ const Mun = () => {
 
                                     </Carousel.Item>
                                 ))}
-                                           <div className="color"></div>
+                                <div className="color"></div>
                             </Carousel.Reel>
                             {/* <Carousel.RightArrow>
             <ControlsChevronRightSmall />
@@ -431,8 +460,8 @@ const Mun = () => {
 
                 </Carousel>
             </div>
-           
- 
+
+
             <div className="comm_title_box ">
                 <h1 className="cabi_font our_comm all_font collabtitle">In Collaboration with</h1>
 
