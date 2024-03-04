@@ -372,7 +372,43 @@
         margin-right: auto;
     }
 
-    .reviews_container {
+    .carosol_container {
         height: 67.5vw;
     }
+
+    .review_card_cat_1{
+        width: 68.50vw;
+        height: 44.29vw;
+    }
+
+    .male_profile{
+        height: 8.10vw;
+        width: 8.10vw;
+        top: 3.84vw;
+        left: 3.84vw;
+    }
+
+    .bio_heading{
+        top: 4.84vw;
+        left: 14.5vw;
+    }
+
+    .review_f_size{
+        font-size: 2.56vw;
+    }
+
+    .comment{
+        top: 20vw;
+        margin: 0 4.48vw;
+    }
+
+    .bubble-container{
+        height: 16vw;
+        width: 16vw;
+    }
+
+    .bubble{
+        font-size: 3.34vw;
+    }
+
 }

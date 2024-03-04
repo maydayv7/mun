@@ -1,4 +1,4 @@
-.reviews_container{
+.reviews_container {
     height: 26.56vw;
     width: 100vw;
     display: flex;
@@ -7,7 +7,7 @@
     align-items: center;
 }
 
-.reviews_box{
+.reviews_box {
     height: 17.28vw;
     width: 64.40vw;
     position: relative;
@@ -18,41 +18,41 @@
     justify-content: center;
 }
 
-.pointer{
+.pointer {
     height: 2.24vw;
     width: 1vw;
     margin: 0vw 2vw;
 }
 
-.pointer:hover{
+.pointer:hover {
     cursor: pointer;
 }
 
-.rectangle{
+.rectangle {
     width: 100%;
     height: auto;
     border-radius: 0.832vw 0.832vw 0 0;
 }
 
-.rectangle_2{
+.rectangle_2 {
     width: 23.99vw;
     height: auto;
     border-radius: 0.74vw 0.74vw 0 0;
 }
 
-.rectangle_3{
+.rectangle_3 {
     width: 22.17vw;
     height: auto;
     border-radius: 0.69vw 0.69vw 0 0;
 }
 
-.rectangle_4{
+.rectangle_4 {
     width: 19.81vw;
     height: auto;
     border-radius: 0.61vw 0.61vw 0 0;
 }
 
-.male_profile{
+.male_profile {
     height: auto;
     width: 3.16vw;
     position: absolute;
@@ -60,7 +60,7 @@
     left: 1vw;
 }
 
-.male_profile_2{
+.male_profile_2 {
     height: auto;
     width: 2.84vw;
     position: absolute;
@@ -68,7 +68,7 @@
     left: 1.34vw;
 }
 
-.male_profile_3{
+.male_profile_3 {
     height: auto;
     width: 2.62vw;
     position: absolute;
@@ -76,7 +76,7 @@
     left: 1.24vw;
 }
 
-.male_profile_4{
+.male_profile_4 {
     height: auto;
     width: 2.34vw;
     position: absolute;
@@ -84,56 +84,56 @@
     left: 1.11vw;
 }
 
-.bio_heading{
+.bio_heading {
     position: absolute;
     top: 1.85vw;
     left: 5vw;
 }
 
-.bio_heading_2{
+.bio_heading_2 {
     position: absolute;
     top: 1.5vw;
     left: 5vw;
 }
 
-.bio_heading_3{
+.bio_heading_3 {
     position: absolute;
     top: 1.5vw;
     left: 4.5vw;
 }
 
-.bio_heading_4{
+.bio_heading_4 {
     position: absolute;
     top: 1.5vw;
     left: 4vw;
 }
 
-.comment{
+.comment {
     margin: 0 1.8vw;
     position: absolute;
     top: 7vw;
     font-weight: 450;
 }
 
-.comment_2{
+.comment_2 {
     margin: 0 1.5vw;
     position: absolute;
     top: 6.5vw;
 }
 
-.comment_3{
+.comment_3 {
     margin: 0 1.5vw;
     position: absolute;
     top: 6.25vw;
 }
 
-.comment_4{
+.comment_4 {
     margin: 0 1.5vw;
     position: absolute;
     top: 5.5vw;
 }
 
-.stars_box{
+.stars_box {
     height: 0.83vw;
     width: 7.06vw;
     position: absolute;
@@ -142,17 +142,16 @@
 }
 
 
-.review_card_cat_1{
+.review_card_cat_1 {
     height: 17.28vw;
     width: 26.73vw;
-position: relative;
+    position: relative;
     border-radius: 0.832vw;
     z-index: 10;
     background-color: white;
-    box-shadow: 0 0 1.5vw rgb(0, 0, 0, 0.16);
 }
 
-.review_card_cat_2{
+.review_card_cat_2 {
     height: 15.51vw;
     width: 23.99vw;
     position: absolute;
@@ -163,7 +162,7 @@ position: relative;
     box-shadow: 0 0 1.5vw rgb(0, 0, 0, 0.16);
 }
 
-.review_card_cat_3{
+.review_card_cat_3 {
     height: 14.33vw;
     width: 22.17vw;
     position: absolute;
@@ -174,7 +173,7 @@ position: relative;
     box-shadow: 0 0 1.5vw rgb(0, 0, 0, 0.16);
 }
 
-.review_card_cat_4{
+.review_card_cat_4 {
     height: 12.81vw;
     width: 19.81vw;
     position: absolute;
@@ -185,30 +184,30 @@ position: relative;
     box-shadow: 0 0 1.5vw rgb(0, 0, 0, 0.16);
 }
 
-.review_card_cat_5{
+.review_card_cat_5 {
     display: none;
 }
 
-.position_r1{
-  right: 12.552vw;
+.position_r1 {
+    right: 12.552vw;
 }
 
-.position_l1{
-  left: 12.552vw;
+.position_l1 {
+    left: 12.552vw;
 }
 
-.position_r2{
+.position_r2 {
     right: 6.276vw;
 }
 
-.position_l2{
+.position_l2 {
     left: 6.276vw;
 }
 
-.position_r3{
+.position_r3 {
     right: 0;
 }
 
-.position_l3{
+.position_l3 {
     left: 0;
 }
