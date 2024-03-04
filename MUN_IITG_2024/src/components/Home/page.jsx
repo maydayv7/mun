@@ -26,13 +26,13 @@ import blue_frame from "./resources/blue_frame.png";
 import orange_frame from "./resources/orange_frame.png";
 import pink_left from "./resources/pink_left.png";
 import pink_right from "./resources/pink_right.png";
-import Navbar from '../general/Navbar'; 
+import Navbar from '../general/Navbar';
 import mountain from './resources/mouuntain.png'
 import seal from './resources/seal.png';
 import women from './resources/women.png';
 import sealbase from './resources/sealbase.png';
 import sponsor1 from './resources/sponsor1.png';
-import  sponsor2 from './resources/sponsor2.png';
+import sponsor2 from './resources/sponsor2.png';
 import sponsor3 from './resources/sponsor3.png';
 import { useState } from "react";
 import Footer from "../general/Footerm";
@@ -51,10 +51,10 @@ const Mun = () => {
         setCurrentIndex(prevIndex => (prevIndex === Data.length - 1 ? 0 : prevIndex + 1));
     };
     return (
-       
-    
+
+
         <div className="mun_container">
-            <Navbar/>
+                <Navbar />
             <div className="logo_container">
                 <div className="color_logo color_logo_1"></div>
                 <div className="color_logo color_logo_2"></div>
@@ -82,12 +82,12 @@ const Mun = () => {
                     <p className="font_cal mons_font line_4">Dead Poets society</p>
                 </div>
             </div>
-           
+
             <div className="comm_post_container">
-            <div className="comm_title_box">
-                <h1 className="cabi_font our_comm all_font">Our Committees</h1>
-              
-            </div>
+                <div className="comm_title_box">
+                    <h1 className="cabi_font our_comm all_font">Our Committees</h1>
+
+                </div>
                 <div className="comm_comp">
                     <div className="left_box">
                         <p className="comp_title cabi_font all_font cf1">Lok Sabha</p>
@@ -109,7 +109,7 @@ const Mun = () => {
                                 repellat nobis consequatur exercitationem incidunt necessitatibus.
                             </p>
                         </div>
-                      
+
                         <img src={img_1} className="img_1" alt="" />
                         <img src={img_2} className="img_2" alt="" />
                     </div>
@@ -135,7 +135,7 @@ const Mun = () => {
                                 repellat nobis consequatur exercitationem incidunt necessitatibus.
                             </p>
                         </div>
-                       
+
                         <img src={img_3} className="img_1" alt="" />
                         <img src={img_4} className="img_2" alt="" />
                     </div>
@@ -216,7 +216,7 @@ const Mun = () => {
                     </div>
                 </div>
             </div>
-           
+
             {/* <div className="reviews_container">
                 <img src={left_point} className="left_point pointer" alt="" onClick={handleLeftArrowClick}/>
                 <div className="reviews_box">
@@ -315,7 +315,7 @@ const Mun = () => {
                 </div>
                 <img src={right_point} className="right_point pointer" alt="" onClick={handleRightArrowClick}/>
             </div>  */}
-     {/* <div className="h-56 sm:h-64 xl:h-80 2xl:h-96">
+            {/* <div className="h-56 sm:h-64 xl:h-80 2xl:h-96">
       <Carousel onSlideChange={(index) => console.log('onSlideChange()', index)}>
         <div className="flex h-full items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white">
           Slide 1
@@ -328,24 +328,25 @@ const Mun = () => {
         </div>
       </Carousel>
     </div> */}
-     <div className="comm_title_box modified">
-                <h1 className="cabi_font our_comm all_font">Reviews</h1>
-                
-            </div>
     
-     <div className="review_container">
-           
-      <Carousel className='carosol_container' >
-      {({ firstVisibleIndex, lastVisibleIndex }) => (
-        <>
-          {/* <Carousel.LeftArrow>
+            <div className="comm_title_box modified">
+                <h1 className="cabi_font our_comm all_font modified_review">Let read some reviews</h1>
+
+            </div>
+
+            <div className="review_container">
+
+                <Carousel className='carosol_container' >
+                    {({ firstVisibleIndex, lastVisibleIndex }) => (
+                        <>
+                            {/* <Carousel.LeftArrow>
             <ControlsChevronLeftSmall />
           </Carousel.LeftArrow> */}
-          <Carousel.Reel className="reel_container">
-            {items.map((_, index) => (
-              <Carousel.Item key={index} className="w-100 h-70">
-          
-                {/* <div className="review_card_cat_4 position_r3">
+                            <Carousel.Reel style={{ overflow: 'hidden' }} className="reel_container">
+                                {items.map((_, index) => (
+                                    <Carousel.Item key={index} className="w-100 h-70">
+
+                                        {/* <div className="review_card_cat_4 position_r3">
                         <img src={pink_right} className="rectangle_4" alt="" />
                         <img src={male_profile} className="male_profile_4" alt="" />  
                         <div className="bio_heading_4">
@@ -358,45 +359,52 @@ const Mun = () => {
                             </p>
                         </div>                      
                     </div> */}
-                    <div className="review_card_cat_1">
-                        <img src={Data[currentIndex+3].image} className="rectangle" alt="" />
-                        <img src={Data[currentIndex+3].profileImage} className="male_profile" alt="" />
-                        <div className="bio_heading">
-                            <h2 className="mons_font cf2 review_f_size all_font">Vishwaprasanna Hariharan</h2>
-                            <p className="mons_font cf2 review_f_size all_font">Delegate</p>
-                        </div>
-                        <div className="comment">
-                            <p className="mons_font cf2 review_f_size all_font">"It's a really amazing platform to learn not only about the affairs of
-                                the world but also about how to articulate your thoughts and put them into words."
-                            </p>
-                        </div>
-                        <div className="stars_box"></div>
-                    </div>
-                   
-              </Carousel.Item>
-            ))}
-          </Carousel.Reel>
-          {/* <Carousel.RightArrow>
+                                        <div className="review_card_cat_1">
+                                            <img src={Data[currentIndex + 3].image} className="rectangle" alt="" />
+                                            <img src={Data[currentIndex + 3].profileImage} className="male_profile" alt="" />
+                                            <div className="bio_heading">
+                                                <h2 className="mons_font cf2 review_f_size all_font">Vishwaprasanna Hariharan</h2>
+                                                <p className="mons_font cf2 review_f_size all_font">Delegate</p>
+                                            </div>
+                                            <div className="comment">
+                                                <p className="mons_font cf2 review_f_size all_font">"It's a really amazing platform to learn not only about the affairs of
+                                                    the world but also about how to articulate your thoughts and put them into words."
+                                                </p>
+                                            </div>
+                                            <div className="stars_box"></div>
+                                        </div>
+
+                                    </Carousel.Item>
+                                ))}
+                                           <div className="color"></div>
+                            </Carousel.Reel>
+                            {/* <Carousel.RightArrow>
             <ControlsChevronRightSmall />
           </Carousel.RightArrow> */}
-          
-        </>
-      )}
 
-    </Carousel>
-    </div>
-    <div className="color"></div>
+                        </>
+                    )}
+
+                </Carousel>
+            </div>
+           
+ 
             <div className="comm_title_box ">
                 <h1 className="cabi_font our_comm all_font collabtitle">In Collaboration with</h1>
-              
-            </div>
-         <div className="sponsor_logo">
-<div className="sponsorone"><img src={sponsor1} alt="" className="s_logo1" /></div>
-<div className="sponsortwo"><img src={sponsor2} alt="" className="s_logo2" /></div>
-<div className="sponsorthree"><img src={sponsor3} alt=""className="s_logo3" /></div>
-         </div>
 
-         <Footer/>
+            </div>
+            <div className="sponsor_logo">
+                <div className="sponsorone"><img src={sponsor1} alt="" className="s_logo1" /></div>
+                <div className="sponsortwo"><img src={sponsor2} alt="" className="s_logo2" /></div>
+                <div className="sponsorthree"><img src={sponsor3} alt="" className="s_logo3" /></div>
+            </div>
+
+            <Footer />
+            <div class="bubble-container">
+                <a href="form.html" class="bubble">
+                    Apply
+                </a>
+            </div>
         </div>
     );
 }
@@ -404,41 +412,41 @@ const Mun = () => {
 
 const Data = [
     {
-      image: pink_right,
-      profileImage: male_profile,
-      title : "Vishwaprasanna Hariharan",
-      role: "Delegate",
-      comment: "It's a really amazing platform to learn not only about the affairs of the world but also about how to articulate your thoughts and put them into words."
+        image: pink_right,
+        profileImage: male_profile,
+        title: "Vishwaprasanna Hariharan",
+        role: "Delegate",
+        comment: "It's a really amazing platform to learn not only about the affairs of the world but also about how to articulate your thoughts and put them into words."
     },
     // Add more review objects as needed
- 
-  {
-    image: orange_frame,
-    profileImage: male_profile,
-    title: "Vishwaprasanna Hariharan",
-    role: "Delegate",
-    comment: "It's a really amazing platform to learn not only about the affairs of the world but also about how to articulate your thoughts and put them into words."
-  },
-  {
-    image: green_frame,
-    profileImage: male_profile,
-    title: "Vishwaprasanna Hariharan",
-    role: "Delegate",
-    comment: "It's a really amazing platform to learn not only about the affairs of the world but also about how to articulate your thoughts and put them into words."
-  },
-  {
-    image: grey_frame,
-    profileImage: male_profile,
-    title: "Vishwaprasanna Hariharan",
-    role: "Delegate",
-    comment: "It's a really amazing platform to learn not only about the affairs of the world but also about how to articulate your thoughts and put them into words."
-  },
-  {
-    image: rectangle_1,
-    profileImage: male_profile,
-    title: "Vishwaprasanna Hariharan",
-    role: "Delegate",
-    comment: "It's a really amazing platform to learn not only about the affairs of the world but also about how to articulate your thoughts and put them into words."
-  },
+
+    {
+        image: orange_frame,
+        profileImage: male_profile,
+        title: "Vishwaprasanna Hariharan",
+        role: "Delegate",
+        comment: "It's a really amazing platform to learn not only about the affairs of the world but also about how to articulate your thoughts and put them into words."
+    },
+    {
+        image: green_frame,
+        profileImage: male_profile,
+        title: "Vishwaprasanna Hariharan",
+        role: "Delegate",
+        comment: "It's a really amazing platform to learn not only about the affairs of the world but also about how to articulate your thoughts and put them into words."
+    },
+    {
+        image: grey_frame,
+        profileImage: male_profile,
+        title: "Vishwaprasanna Hariharan",
+        role: "Delegate",
+        comment: "It's a really amazing platform to learn not only about the affairs of the world but also about how to articulate your thoughts and put them into words."
+    },
+    {
+        image: rectangle_1,
+        profileImage: male_profile,
+        title: "Vishwaprasanna Hariharan",
+        role: "Delegate",
+        comment: "It's a really amazing platform to learn not only about the affairs of the world but also about how to articulate your thoughts and put them into words."
+    },
 ];
 export default Mun;
