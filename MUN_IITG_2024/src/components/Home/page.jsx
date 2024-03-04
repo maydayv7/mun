@@ -201,7 +201,7 @@ const Mun = () => {
                 </div>
                 <div className="comm_comp">
                     <div className="left_box">
-                        <p className="comp_title_2 cabi_font all_font cf1">League of Nations</p>
+                        <p className="comp_title_2 cabi_font all_font cf1 text-[#D87B38]">UNHRC</p>
                         <img src={unhrc} className="league" alt="" />
                     </div>
                     <div className="right_box">
@@ -212,7 +212,7 @@ const Mun = () => {
                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, dicta!
 
                             </p>
-                            <h1 className="cabi_font head_lorem cf1 all_font">Election Evolution</h1>
+                            <h1 className="cabi_font head_lorem cf1 all_font text-[#D87B38] ">Beyond broken borders</h1>
                             <p className="mons_font comp_lorem lower_para all_font display_type">Lorem ipsum dolor sit amet consectetur
                                 adipisicing elit. Optio ratione accusamus, perspiciatis dolorem ipsa laborum porro
                                 hic placeat aliquid? Repudiandae, iste libero. Sapiente, soluta dolore dolorem
@@ -227,13 +227,13 @@ const Mun = () => {
                                 See More
                             </a>
                         </div>
-                        <img src={img_1} className="img_1" alt="" />
-                        <img src={img_2} className="img_2" alt="" />
+                        <img src={mountain} className="img_1" alt="" />
+                        <img src={women} className="img_2" alt="" />
                     </div>
                 </div>
                 <div className="comm_comp">
                     <div className="left_box">
-                        <p className="comp_title_2 cabi_font all_font cf2">League of Nations</p>
+                        <p className="comp_title_2 cabi_font all_font cf1">UNOC</p>
                         <img src={unoc} className="league" alt="" />
                     </div>
                     <div className="right_box">
@@ -243,7 +243,7 @@ const Mun = () => {
                                 nesciunt veritatis facere, fugiat quas nam cum quo odio at! Hic, voluptatibus voluptatum.
                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, dicta!
                             </p>
-                            <h1 className="cabi_font head_lorem cf2 all_font">Beyond bork bord</h1>
+                            <h1 className="cabi_font head_lorem cf2 all_font">Battles Below</h1>
                             <p className="mons_font comp_lorem lower_para all_font display_type">Lorem ipsum dolor sit amet consectetur
                                 adipisicing elit. Optio ratione accusamus, perspiciatis dolorem ipsa laborum porro
                                 hic placeat aliquid? Repudiandae, iste libero. Sapiente, soluta dolore dolorem
@@ -258,8 +258,8 @@ const Mun = () => {
                                 See More
                             </a>
                         </div>
-                        <img src={img_1} className="img_1" alt="" />
-                        <img src={img_2} className="img_2" alt="" />
+                        <img src={sealbase} className="img_1" alt="" />
+                        <img src={seal} className="img_2" alt="" />
                     </div>
                 </div>
                 <div className="comm_comp">
@@ -435,9 +435,9 @@ const Mun = () => {
       </Carousel>
     </div> */}
 
-            <div className="comm_title_box modified">
-                <h1 className="cabi_font our_comm all_font modified_review">Reviews</h1>
-
+        <div className="flex flex-row flex-nowrap px-9 w-full align-center justify-center items-center h-[25vh] bg-[#FFF7E4]">
+                <p className="mq350:text-[18px] font-raleway font-black mq520:text-xl text-2xl sm:text-3xl md:text-4xl mr-4 mq520:text-wrap text-nowrap" style={{ color: '#3245A9' }}>Lets Read Some Reviews</p>
+                <hr className="w-full opacity-100 border-t-2 -translate-y-1" style={{ color: '#3245A9' }} />
             </div>
 
             <div className="review_container">
