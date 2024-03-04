@@ -76,20 +76,20 @@ export default function Navbar() {
   <div className="w-full md:w-auto md:order-1 mt-2 md:flex" id="navbar-cta">
     <ul style={{ listStyleType: 'none' }} className="flex flex-col md:flex-row justify-center font-medium md:p-0  rounded-full bg-gray-50 md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 ">
       <li>
-        <NavLink to="/" style={{ textDecoration: 'none', color:'black' }} className={`block py-2 px-3 md:p-0 rounded ${activeItem === 'home' ? 'active' : ''}`} onClick={() => setActiveItem('home')}>Home</NavLink>
+        <NavLink to="/" style={{ textDecoration: 'none', color:'l' }} className={`block py-2 px-3 md:p-0 rounded ${activeItem === 'home' ? 'active' : ''}`} onClick={() => setActiveItem('home')}>Home</NavLink>
       </li>
       <li>
         <NavLink to="/AboutUs" style={{ textDecoration: 'none', color:'black' }} className={`block py-2 px-3 md:p-0 rounded ${activeItem === 'About' ? 'active' : ''}`} onClick={() => setActiveItem('About')}>About Us</NavLink>
       </li>
       <li>
-        <NavLink to="/PreviousEditions" style={{ textDecoration: 'none',color }} className={`block py-2 px-3 md:p-0 rounded ${activeItem === 'Previous Editions' ? 'active' : ''}`} onClick={() => setActiveItem('Previous Editions')}>Previous Editions</NavLink>
+        <NavLink to="/PreviousEditions" style={{ textDecoration: 'none',color:'black' }} className={`block py-2 px-3 md:p-0 rounded ${activeItem === 'Previous Editions' ? 'active' : ''}`} onClick={() => setActiveItem('Previous Editions')}>Previous Editions</NavLink>
       </li>
       {/* <li>
           <NavLink to="/Service"
           style={{textDecoration:'none'}} className={`block py-2 px-3 md:p-0 rounded ${activeItem === 'Services' ? 'active' : ''}`} onClick={() => setActiveItem('Services')}>Services</NavLink>
         </li> */}
       <li>
-        <NavLink to="/ContactUs" style={{ textDecoration: 'none' }} className={`block py-2 px-3 md:p-0 rounded ${activeItem === 'Contact' ? 'active' : ''}`} onClick={() => setActiveItem('Contact')}>Contact</NavLink>
+        <NavLink to="/ContactUs" style={{ textDecoration: 'none',color:'black' }} className={`block py-2 px-3 md:p-0 rounded ${activeItem === 'Contact' ? 'active' : ''}`} onClick={() => setActiveItem('Contact')}>Contact</NavLink>
       </li>
     </ul>
   </div>
