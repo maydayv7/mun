@@ -7,6 +7,7 @@ import { Carousel } from '@heathmont/moon-core-tw';
 import { ControlsChevronLeftSmall, ControlsChevronRightSmall } from '@heathmont/moon-icons-tw';
 
 // import { Carousel } from 'flowbite-react';
+import munlogo from './resources/MUN.png'
 import logo_1 from "./resources/Group 112.png";
 import logo_2 from "./resources/Group 34471.png";
 import logo_3 from "./resources/Group 34473.png";
@@ -93,6 +94,7 @@ const Mun = () => {
 
 
         <div className="mun_container">
+            
             <div className={state}>
                 <div className="inside_cont">
                     <div className="up_box">
@@ -136,7 +138,9 @@ const Mun = () => {
                 </div>
             </div>
             {!isMobileView && <Navbar/>}
+            
             <div className="logo_container">
+       
                 <div className="color_logo color_logo_1"></div>
                 <div className="color_logo color_logo_2"></div>
                 <div className="color_logo color_logo_3"></div>
