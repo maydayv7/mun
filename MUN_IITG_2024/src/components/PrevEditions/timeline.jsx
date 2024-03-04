@@ -5,6 +5,8 @@ import arrow from '../../assets/prevEditions/arrow.svg'
 
 const Timeline = () => {
     
+
+    
     return ( 
         <div className={styles.timeline}>
                 {

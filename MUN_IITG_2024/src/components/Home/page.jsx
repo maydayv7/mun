@@ -42,6 +42,8 @@ import quotes_right from "./resources/quotes_right.png";
 import ham_logo from "./resources/Vector 11.png";
 import cross_logo from "./resources/Vector 10.png";
 import home_logo from "./resources/Frame 72.png";
+import unhrc from "./resources/UNHRC.png";
+import unoc from "./resources/UNOC.png";
 
 const Mun = () => {
 
@@ -197,6 +199,69 @@ const Mun = () => {
                 </div>
                 <div className="comm_comp">
                     <div className="left_box">
+                        <p className="comp_title_2 cabi_font all_font cf1 text-[#D87B38]">UNHRC</p>
+                        <img src={unhrc} className="league" alt="" />
+                    </div>
+                    <div className="right_box">
+                        <div className="center_box">
+                            <p className="mons_font comp_lorem all_font display_type">Lorem ipsum dolor, sit amet
+                                consectetur adipisicing elit. Tempora aliquid excepturi modi,
+                                nesciunt veritatis facere, fugiat quas nam cum quo odio at! Hic, voluptatibus voluptatum.
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, dicta!
+
+                            </p>
+                            <h1 className="cabi_font head_lorem cf1 all_font text-[#D87B38] ">Beyond broken borders</h1>
+                            <p className="mons_font comp_lorem lower_para all_font display_type">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Optio ratione accusamus, perspiciatis dolorem ipsa laborum porro
+                                hic placeat aliquid? Repudiandae, iste libero. Sapiente, soluta dolore dolorem
+                                distinctio nisi sequi earum tempora sunt fuga. Possimus qui, odio a hic perferendis
+                                repellat nobis consequatur exercitationem incidunt necessitatibus.
+                            </p>
+                            <p className="mobile_line f_size_12 roadmap_txt all_font mons_font">
+                                A Roadmap to Strengthening
+                                Democracy in India
+                            </p>
+                            <a onClick={showMore} className="see_more f_size_12 mobile_line see_txt all_font mons_font">
+                                See More
+                            </a>
+                        </div>
+                        <img src={mountain} className="img_1" alt="" />
+                        <img src={women} className="img_2" alt="" />
+                    </div>
+                </div>
+                <div className="comm_comp">
+                    <div className="left_box">
+                        <p className="comp_title_2 cabi_font all_font cf1">UNOC</p>
+                        <img src={unoc} className="league unoc_img" alt="" />
+                    </div>
+                    <div className="right_box">
+                        <div className="center_box">
+                            <p className="mons_font comp_lorem all_font display_type">Lorem ipsum dolor, sit amet
+                                consectetur adipisicing elit. Tempora aliquid excepturi modi,
+                                nesciunt veritatis facere, fugiat quas nam cum quo odio at! Hic, voluptatibus voluptatum.
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, dicta!
+                            </p>
+                            <h1 className="cabi_font head_lorem cf2 all_font">Battles Below</h1>
+                            <p className="mons_font comp_lorem lower_para all_font display_type">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Optio ratione accusamus, perspiciatis dolorem ipsa laborum porro
+                                hic placeat aliquid? Repudiandae, iste libero. Sapiente, soluta dolore dolorem
+                                distinctio nisi sequi earum tempora sunt fuga. Possimus qui, odio a hic perferendis
+                                repellat nobis consequatur exercitationem incidunt necessitatibus.
+                            </p>
+                            <p className="mobile_line f_size_12 roadmap_txt all_font mons_font">
+                                A Roadmap to Strengthening
+                                Democracy in India
+                            </p>
+                            <a onClick={showMore} className="see_more f_size_12 mobile_line see_txt all_font mons_font">
+                                See More
+                            </a>
+                        </div>
+                        <img src={sealbase} className="img_1" alt="" />
+                        <img src={seal} className="img_2" alt="" />
+                    </div>
+                </div>
+                <div className="comm_comp">
+                    <div className="left_box">
                         <p className="comp_title_2 cabi_font all_font cf2">League of Nations</p>
                         <img src={league} className="league" alt="" />
                     </div>
@@ -226,69 +291,6 @@ const Mun = () => {
 
                         <img src={img_3} className="img_1" alt="" />
                         <img src={img_4} className="img_2" alt="" />
-                    </div>
-                </div>
-                <div className="comm_comp">
-                    <div className="left_box">
-                        <p className="comp_title_2 cabi_font all_font cf1">League of Nations</p>
-                        <img src={league} className="league" alt="" />
-                    </div>
-                    <div className="right_box">
-                        <div className="center_box">
-                            <p className="mons_font comp_lorem all_font display_type">Lorem ipsum dolor, sit amet
-                                consectetur adipisicing elit. Tempora aliquid excepturi modi,
-                                nesciunt veritatis facere, fugiat quas nam cum quo odio at! Hic, voluptatibus voluptatum.
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, dicta!
-
-                            </p>
-                            <h1 className="cabi_font head_lorem cf1 all_font">Election Evolution</h1>
-                            <p className="mons_font comp_lorem lower_para all_font display_type">Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Optio ratione accusamus, perspiciatis dolorem ipsa laborum porro
-                                hic placeat aliquid? Repudiandae, iste libero. Sapiente, soluta dolore dolorem
-                                distinctio nisi sequi earum tempora sunt fuga. Possimus qui, odio a hic perferendis
-                                repellat nobis consequatur exercitationem incidunt necessitatibus.
-                            </p>
-                            <p className="mobile_line f_size_12 roadmap_txt all_font mons_font">
-                                A Roadmap to Strengthening
-                                Democracy in India
-                            </p>
-                            <a onClick={showMore} className="see_more f_size_12 mobile_line see_txt all_font mons_font">
-                                See More
-                            </a>
-                        </div>
-                        <img src={img_1} className="img_1" alt="" />
-                        <img src={img_2} className="img_2" alt="" />
-                    </div>
-                </div>
-                <div className="comm_comp">
-                    <div className="left_box">
-                        <p className="comp_title_2 cabi_font all_font cf2">League of Nations</p>
-                        <img src={league} className="league" alt="" />
-                    </div>
-                    <div className="right_box">
-                        <div className="center_box">
-                            <p className="mons_font comp_lorem all_font display_type">Lorem ipsum dolor, sit amet
-                                consectetur adipisicing elit. Tempora aliquid excepturi modi,
-                                nesciunt veritatis facere, fugiat quas nam cum quo odio at! Hic, voluptatibus voluptatum.
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, dicta!
-                            </p>
-                            <h1 className="cabi_font head_lorem cf2 all_font">Beyond bork bord</h1>
-                            <p className="mons_font comp_lorem lower_para all_font display_type">Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Optio ratione accusamus, perspiciatis dolorem ipsa laborum porro
-                                hic placeat aliquid? Repudiandae, iste libero. Sapiente, soluta dolore dolorem
-                                distinctio nisi sequi earum tempora sunt fuga. Possimus qui, odio a hic perferendis
-                                repellat nobis consequatur exercitationem incidunt necessitatibus.
-                            </p>
-                            <p className="mobile_line f_size_12 roadmap_txt all_font mons_font">
-                                A Roadmap to Strengthening
-                                Democracy in India
-                            </p>
-                            <a onClick={showMore} className="see_more f_size_12 mobile_line see_txt all_font mons_font">
-                                See More
-                            </a>
-                        </div>
-                        <img src={img_1} className="img_1" alt="" />
-                        <img src={img_2} className="img_2" alt="" />
                     </div>
                 </div>
             </div>
@@ -431,9 +433,9 @@ const Mun = () => {
       </Carousel>
     </div> */}
 
-            <div className="comm_title_box modified">
-                <h1 className="cabi_font our_comm all_font modified_review">Reviews</h1>
-
+        <div className="flex flex-row flex-nowrap px-9 w-full align-center justify-center items-center h-[25vh] bg-[#FFF7E4]">
+                <p className="mq350:text-[18px] font-raleway font-black mq520:text-xl text-2xl sm:text-3xl md:text-4xl mr-4 mq520:text-wrap text-nowrap" style={{ color: '#3245A9' }}>Lets Read Some Reviews</p>
+                <hr className="w-full opacity-100 border-t-2 -translate-y-1" style={{ color: '#3245A9' }} />
             </div>
 
             <div className="review_container">
@@ -502,8 +504,8 @@ const Mun = () => {
             </div>
 
             <Footer />
-            <div class="bubble-container">
-                <a href="form.html" class="bubble">
+            <div className="bubble-container">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSclG4wC1Erj9bEBwSZdl9XJfLJleJVYGb3FypLEaYCyz3PIbA/viewform?usp=send_form" target="_blank" className="bubble">
                     Apply
                 </a>
             </div>
