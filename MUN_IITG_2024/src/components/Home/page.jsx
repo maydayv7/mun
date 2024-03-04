@@ -42,6 +42,8 @@ import quotes_right from "./resources/quotes_right.png";
 import ham_logo from "./resources/Vector 11.png";
 import cross_logo from "./resources/Vector 10.png";
 import home_logo from "./resources/logo_home_2.png";
+import unhrc from "./resources/UNHRC.png";
+import unoc from "./resources/UNOC.png";
 
 const Mun = () => {
 
@@ -199,41 +201,8 @@ const Mun = () => {
                 </div>
                 <div className="comm_comp">
                     <div className="left_box">
-                        <p className="comp_title_2 cabi_font all_font cf2">League of Nations</p>
-                        <img src={league} className="league" alt="" />
-                    </div>
-                    <div className="right_box">
-                        <div className="center_box">
-                            <p className="mons_font comp_lorem all_font display_type">Lorem ipsum dolor, sit amet
-                                consectetur adipisicing elit. Tempora aliquid excepturi modi,
-                                nesciunt veritatis facere, fugiat quas nam cum quo odio at! Hic, voluptatibus voluptatum.
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, dicta!
-
-                            </p>
-                            <h1 className="cabi_font head_lorem cf2 all_font">Election Evolution</h1>
-                            <p className="mons_font comp_lorem lower_para all_font display_type">Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Optio ratione accusamus, perspiciatis dolorem ipsa laborum porro
-                                hic placeat aliquid? Repudiandae, iste libero. Sapiente, soluta dolore dolorem
-                                distinctio nisi sequi earum tempora sunt fuga. Possimus qui, odio a hic perferendis
-                                repellat nobis consequatur exercitationem incidunt necessitatibus.
-                            </p>
-                            <p className="mobile_line f_size_12 roadmap_txt all_font mons_font">
-                                A Roadmap to Strengthening
-                                Democracy in India
-                            </p>
-                            <a onClick={showMore} className="see_more f_size_12 mobile_line see_txt all_font mons_font">
-                                See More
-                            </a>
-                        </div>
-
-                        <img src={img_3} className="img_1" alt="" />
-                        <img src={img_4} className="img_2" alt="" />
-                    </div>
-                </div>
-                <div className="comm_comp">
-                    <div className="left_box">
                         <p className="comp_title_2 cabi_font all_font cf1">League of Nations</p>
-                        <img src={league} className="league" alt="" />
+                        <img src={unhrc} className="league" alt="" />
                     </div>
                     <div className="right_box">
                         <div className="center_box">
@@ -265,7 +234,7 @@ const Mun = () => {
                 <div className="comm_comp">
                     <div className="left_box">
                         <p className="comp_title_2 cabi_font all_font cf2">League of Nations</p>
-                        <img src={league} className="league" alt="" />
+                        <img src={unoc} className="league" alt="" />
                     </div>
                     <div className="right_box">
                         <div className="center_box">
@@ -291,6 +260,39 @@ const Mun = () => {
                         </div>
                         <img src={img_1} className="img_1" alt="" />
                         <img src={img_2} className="img_2" alt="" />
+                    </div>
+                </div>
+                <div className="comm_comp">
+                    <div className="left_box">
+                        <p className="comp_title_2 cabi_font all_font cf2">League of Nations</p>
+                        <img src={league} className="league" alt="" />
+                    </div>
+                    <div className="right_box">
+                        <div className="center_box">
+                            <p className="mons_font comp_lorem all_font display_type">Lorem ipsum dolor, sit amet
+                                consectetur adipisicing elit. Tempora aliquid excepturi modi,
+                                nesciunt veritatis facere, fugiat quas nam cum quo odio at! Hic, voluptatibus voluptatum.
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, dicta!
+
+                            </p>
+                            <h1 className="cabi_font head_lorem cf2 all_font">Election Evolution</h1>
+                            <p className="mons_font comp_lorem lower_para all_font display_type">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Optio ratione accusamus, perspiciatis dolorem ipsa laborum porro
+                                hic placeat aliquid? Repudiandae, iste libero. Sapiente, soluta dolore dolorem
+                                distinctio nisi sequi earum tempora sunt fuga. Possimus qui, odio a hic perferendis
+                                repellat nobis consequatur exercitationem incidunt necessitatibus.
+                            </p>
+                            <p className="mobile_line f_size_12 roadmap_txt all_font mons_font">
+                                A Roadmap to Strengthening
+                                Democracy in India
+                            </p>
+                            <a onClick={showMore} className="see_more f_size_12 mobile_line see_txt all_font mons_font">
+                                See More
+                            </a>
+                        </div>
+
+                        <img src={img_3} className="img_1" alt="" />
+                        <img src={img_4} className="img_2" alt="" />
                     </div>
                 </div>
             </div>
