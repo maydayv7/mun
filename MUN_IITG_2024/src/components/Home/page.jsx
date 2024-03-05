@@ -7,7 +7,7 @@ import { Carousel } from '@heathmont/moon-core-tw';
 import { ControlsChevronLeftSmall, ControlsChevronRightSmall } from '@heathmont/moon-icons-tw';
 
 // import { Carousel } from 'flowbite-react';
-import munlogo from './resources/MUN.png'
+
 import logo_1 from "./resources/Group 112.png";
 import logo_2 from "./resources/Group 34471.png";
 import logo_3 from "./resources/Group 34473.png";
@@ -36,7 +36,7 @@ import sealbase from './resources/sealbase.png';
 import sponsor1 from './resources/sponsor1.png';
 import sponsor2 from './resources/sponsor2.png';
 import sponsor3 from './resources/sponsor3.png';
-import { useState,useEffect } from "react";
+import { useState, useEffect } from "react";
 import Footer from "../general/Footerm";
 import quotes_left from "./resources/quotes_left.png";
 import quotes_right from "./resources/quotes_right.png";
@@ -53,18 +53,18 @@ const Mun = () => {
     // Define a function to handle left arrow click
     useEffect(() => {
         const handleResize = () => {
-          setIsMobileView(window.innerWidth <= 600); // Adjust the width breakpoint as needed
+            setIsMobileView(window.innerWidth <= 600); // Adjust the width breakpoint as needed
         };
-    
+
         // Initial check on component mount
         handleResize();
-    
+
         window.addEventListener('resize', handleResize);
-    
+
         return () => {
-          window.removeEventListener('resize', handleResize);
+            window.removeEventListener('resize', handleResize);
         };
-      }, []);
+    }, []);
     const handleLeftArrowClick = () => {
         setCurrentIndex(prevIndex => (prevIndex === 0 ? Data.length - 1 : prevIndex - 1));
     };
@@ -94,7 +94,7 @@ const Mun = () => {
 
 
         <div className="mun_container">
-            
+
             <div className={state}>
                 <div className="inside_cont">
                     <div className="up_box">
@@ -137,10 +137,10 @@ const Mun = () => {
                     </div>
                 </div>
             </div>
-            {!isMobileView && <Navbar/>}
-            
+            {!isMobileView && <Navbar />}
+
             <div className="logo_container">
-       
+
                 <div className="color_logo color_logo_1"></div>
                 <div className="color_logo color_logo_2"></div>
                 <div className="color_logo color_logo_3"></div>
@@ -174,10 +174,7 @@ const Mun = () => {
             </div>
 
             <div className="comm_post_container">
-                {/* <div className="comm_title_box">
-                    <h1 className="cabi_font our_comm all_font">Our Committees</h1>
 
-                </div> */}
                 <div className="flex flex-row flex-nowrap px-9 w-full align-center justify-center items-center h-[5vw]">
                     <p className="mq350:text-[18px] font-raleway font-black mq520:text-xl text-2xl sm:text-3xl md:text-4xl mr-4 mq520:text-wrap text-nowrap" style={{ color: '#3245A9' }}>Our Commities </p>
                     <hr className="w-full opacity-100 border-t-2 -translate-y-1" style={{ color: '#3245A9' }} />
@@ -451,7 +448,7 @@ const Mun = () => {
       </Carousel>
     </div> */}
 
-        <div className="flex flex-row flex-nowrap px-9 w-full align-center justify-center items-center h-[25vh] bg-[#FFF7E4]">
+            <div className="flex flex-row flex-nowrap px-9 w-full align-center justify-center items-center h-[25vh] bg-[#FFF7E4]">
                 <p className="mq350:text-[18px] font-raleway font-black mq520:text-xl text-2xl sm:text-3xl md:text-4xl mr-4 mq520:text-wrap text-nowrap" style={{ color: '#3245A9' }}>Lets Read Some Reviews</p>
                 <hr className="w-full opacity-100 border-t-2 -translate-y-1" style={{ color: '#3245A9' }} />
             </div>
