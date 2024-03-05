@@ -1,79 +1,66 @@
-import signature from "../../assets/aboutUs/sign.svg";
+import signature from "../../assets/aboutUs/signaturefinal.jpeg";
 import letterPolygon from "../../assets/aboutUs/LetterPolygon.png";
 import secyImg from "../../assets/aboutUs/secy1.png";
 const LetterContent = () => {
   return (
     <>
+    
       <div className="relative min-w-none sm:w-[40vw] sm:min-w-[550px] max-w-[700px] h-contain min-h-740px bg-white mq400:px-4 px-8 py-10 mq400:text-[10px]  text-xs leading-5 text-[#3245A9] font-montserrat ml-[min(385px,40vw)] mq950:mx-auto  ">
         <p>Dear Delegates,</p>
         <br />
         {/* Body of letter */}
         <div className="body">
           <p>
-            As the Secretary General of the IITG Model United Nations, Edition
-            XVI, I am pleased to be hosting you at the IIT Guwahati, during
-            Alcheringa 2024, after two virtual years.
+          It is an honour to welcome you to Edition XVI of the IIT Guwahati Model United Nations
+           on behalf of the Secretariat. We are thrilled to host you at our conference and promise to deliver an enriching learning experience.
           </p>
           <br />
           <p>
-            The past two years have been nothing if not a testimony to what type
-            of leadership our world needs. Hearing again and again, “the youth
-            is the future,” we at the IITG Model United Nations strive to
-            provide a platform for these minds of tomorrow to exercise their
-            skills in situations that we face on an international and national
-            level. Given that IITGMUN is organized solely by a team of
-            passionate students from IIT, Guwahati, from different ethnic and
-            academic backgrounds, we strive to bring pressing topics to the
-            table for discussion. Over the years, we have successfully delivered
-            thought-intensive conferences to novice as well as seasoned
-            delegates.
+          Driven by our vision to grow, this year we bring forth four committees designed to shed light on 
+          immediate issues that affect us in our everyday lives. Whether about the plight of the refugees, 
+          the protection of our seas, the integrity of our elections, or ensuring that we learn from the 
+          mistakes in our past, the agendas have been crafted with great care to allow the delegates to 
+          think about and discuss every aspect of the problems and voice their opinions irrespective of 
+          their background, age, or experience.
           </p>
           <br />
           <p>
-            This year, as we prepare to host our 15th Edition, the contemporary
-            world is plagued by recession, war, and insecurity for the
-            sustenance of mere humanity. Building upon these pressing issues,
-            our team, after intense scrutiny, has come up with namely three
-            agendas, Canvassing Crisis: Getting ahead of economic recession,
-            Deliberating Disarmament: Encouraging non-proliferation of Weapons
-            of Mass destruction, and Redefining Family Laws: Dissecting
-            Matrimonial Laws in India.
+          At the IITGMUN, we believe that 'No matter what anybody tells you, 
+          words and ideas can change the world.' These words hold, especially when you, 
+          our future leaders, put your minds together and work in collaboration, committed 
+          to arrive at amicable solutions. However, this requires due research, preparation, 
+          and analysis of these challenges while navigating the realms of diplomacy, foreign policy,
+           alliances, and allegiances, keeping in mind the ultimate goal of ensuring a better future.
+            And even though it is a competition, at the end of the day, it is these skills that you 
+            should take home from an exercise such as this simulation of the institutions that play 
+            such a crucial part in shaping our lives.
           </p>
           <br />
           <p>
-            We, as a generation, are not void of opportunities; however, we are
-            often hampered by crises beyond our control. Choices made by the
-            world's leaders usually define the trajectory of the lives of
-            millions of people. May it be a struggle to overcome oppression,
-            war, recession, or pandemic, our world is put to the test time and
-            time again. These leaders guide us through these crises, and we at
-            IITGMUN work hard to provide a platform to build more such leaders
-            to lead us into the future.
+          The team has worked tirelessly to ensure that the conference is enjoyable,
+           just as it is educational. We strive to allow you to meet like-minded individuals
+            who share your passion for solving problems and those who can help you grow. But 
+            I would also ask you to see the upcoming three days as an opportunity to make friends 
+            and memories that will last a lifetime.
           </p>
           <br />
           <p>
-            The past two years have been closed within the box of our virtual
-            screens. Today we have the privilege to step out of that box into
-            the world and shake hands with our comrades in our march to the best
-            tomorrow possible. With this thought, I shall leave you, an esteemed
-            group of delegates to deliberate, debate, and draft what you would
-            want our world to look like. Looking forward to seeing you at the
-            IITG campus, “What verse shall yours be?”.
+          I wish you all the best, and we look forward to a successful conference with all of you!
           </p>
         </div>
         <br />
         <div className="flex h-contain justify-between items-end">
           {/* Salutations */}
           <div>
-            Suhayl Mahek <br />Secretary General <br />IITGMUN Ed XVI
+            Samarth Jhunjhunwala <br />Secretary General <br />IITGMUN Ed XVI
           </div>
           {/* Signature */}
           <div className="w-[138.4px] h-[79px] flex flex-col">
-            <img className="z-0 h-[70.3px] w-[75px] mx-auto" src={signature} />
+            {/* <img className="z-0 h-[70.3px] w-[75px] mx-auto bg-white-200" src={signature} />
             <div className=" text-center">
               <hr className="mt-[-12px] mb-2 border-t-[0.72px] opacity-100 border-[#3245A9] z-[-1]" />
               <p className="mt-2">General Secretary</p>
-            </div>
+            </div> */}
           </div>
           {/* Secy Image */}
           <div className="absolute mq950:hidden bottom-0 -left-[min(385px,40vw)] z-1 w-[40vw]  ">
