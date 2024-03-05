@@ -26,6 +26,7 @@ export default function Mnavbar(){
     <img src={cross_logo} onClick={handleClick} className={state2 ? "no_logo" : "cross_logo fix_position"} />
     <div className="ham_box">
                         <div className="link_box"><Link to="/" className="link_txt">Home</Link></div>
+                        <div className="link_box"><Link to="/AboutUs" className="link_txt">About Us</Link></div>
                         <div className="link_box"><Link to="/PreviousEditions" className="link_txt">Previous Editions</Link></div>
                         <div className="link_box"><Link to="/ContactUs" className="link_txt">Contact Us</Link></div>
                     </div>

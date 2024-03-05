@@ -1,4 +1,5 @@
 import signature from "../../assets/aboutUs/signaturefinal.jpeg";
+import samarthletter from "../../assets/aboutUs/samarth20.png";
 import letterPolygon from "../../assets/aboutUs/LetterPolygon.png";
 import secyImg from "../../assets/aboutUs/secy1.png";
 const LetterContent = () => {
@@ -66,7 +67,7 @@ const LetterContent = () => {
           <div className="absolute mq950:hidden bottom-0 -left-[min(385px,40vw)] z-1 w-[40vw]  ">
             <img
               className="w-[40vw] max-w-[400px] min-w-[250px] drop-shadow-[10px_0px_0px_#60E1A4] "
-              src={secyImg}
+              src={samarthletter}
             />
             <img
               className="absolute left-0 bottom-0 w-[35vw] max-w-[350px] min-w-[200px]"
