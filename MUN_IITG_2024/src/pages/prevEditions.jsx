@@ -1,11 +1,29 @@
 import Timeline from "../components/PrevEditions/timeline";
 import Navbar from "../components/general/Navbar";
 import PageHeader from "../components/general/pageHeader";
+import { useState,useEffect } from "react";
+import Mnavbar from '../components/general/mobile_nav'
 
 const PrevEditions = () => {
+    const [isMobileView, setIsMobileView] = useState(false);
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobileView(window.innerWidth <= 600); // Adjust the width breakpoint as needed
+        };
+
+        // Initial check on component mount
+        handleResize();
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
     return ( 
         <div className="overflow-x-hidden">
-            <Navbar/>
+            <Mnavbar/>
+          {!isMobileView && <Navbar />}
             <PageHeader title={'Previous Editions'} color={'#AAB4E7'}/>
             <Timeline/>
         </div>

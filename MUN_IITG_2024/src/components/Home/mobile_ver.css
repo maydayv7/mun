@@ -1,7 +1,8 @@
 @media (orientation: portrait) {
 
     .blue_block{
-        position: relative;
+        z-index: 10;
+        position: fixed;
         height: 15.27vw;
         width: 100vw;
         background-color: #3245A9;

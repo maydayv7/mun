@@ -2,6 +2,7 @@ import styles from './timelineModal.module.css';
 const TimelineModal = ({year,arr}) => {
     const [name, imgLink, agenda, description, bgURL] = [...arr];
     return ( 
+        
         <div className={styles.box}>
             {
                 arr.map((arr)=>(
