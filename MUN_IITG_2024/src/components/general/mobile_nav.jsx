@@ -15,7 +15,7 @@ export default function Mnavbar(){
 
     return (
     
-    <div className="blue_block mobile_line_2">
+    <div className="blue_block mobile_line_2 z-50">
 <div className="ham_box_senior">
     <img src={home_logo} className="home_logo_img" />
     <img src={ham_logo} onClick={handleClick} className={state2 ? "ham_logo" : "no_logo"} />
