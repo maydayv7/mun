@@ -76,7 +76,7 @@ export default function Navbar() {
     // </div>
     <>
     <img src={mun} alt="" className="munlogos"/>
-    <img src={alcher} alt="" className="alcherlogo"/>
+   <a href="https://alcheringa.in/home"> <img src={alcher} alt="" className="alcherlogo"/></a>
     <div className="z-2 fixed left-1/2 transform -translate-x-1/2 flex flex-wrap items-center rounded-full justify-center mx-auto mt-2.5">
   <div className="w-full md:w-auto md:order-1 mt-2 md:flex" id="navbar-cta">
     <ul style={{ listStyleType: 'none' }} className="flex flex-col md:flex-row justify-center font-medium md:p-0  rounded-full bg-gray-50 md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 ">
