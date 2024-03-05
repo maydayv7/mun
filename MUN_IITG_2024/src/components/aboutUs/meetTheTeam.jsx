@@ -5,10 +5,10 @@ import SectionHeading from '../general/sectionHeading';
 
 const MeetTheTeam = () => {
     const team = [
-        ['This Guy', 'Designer',{linkedin:'https://www.linkedin.com/',instagram:'https://www.instagram.com/'},secyImg],
-        ['Hello', 'Designer',{linkedin:'https://www.linkedin.com/',instagram:'https://www.instagram.com/'},man],
-        ['Never Mind','Designer',{linkedin:'https://www.linkedin.com/',instagram:'https://www.instagram.com/'}, secyImg],
-        ['kjzdbch zjbxchj','Designer',{linkedin:'https://www.linkedin.com/',instagram:'https://www.instagram.com/'}, man],
+        ['Samarth Jhunjhunwala', 'Secretary General',{linkedin:'https://www.linkedin.com/in/samarth-jhunjhunwala/',instagram:'https://www.instagram.com/'},secyImg],
+        ['Pratham Garg', 'Director General',{linkedin:'https://www.linkedin.com/in/pratham-garg2728/',instagram:'https://www.instagram.com/prathamm2728?igsh=MWFwZ3RxMmYyd2kyMQ=='},man],
+        ['Vedika Garg','Director of International Press',{linkedin:'https://www.linkedin.com/',instagram:'https://www.instagram.com/confusion.o_o?igsh=eG1zcno3bjhpeTBx'}, secyImg],
+        ['Kaustubh Dhote','Director Logistics',{linkedin:'https://www.linkedin.com/',instagram:'https://www.instagram.com/kaus_theta_/?utm_source=qr&r=nametag'}, man],
         ['kjbxchzvx hzbc','Designer',{linkedin:'https://www.linkedin.com/',instagram:'https://www.instagram.com/'}, secyImg],
         ['kjbcxhbzjab jiabc','Designer',{linkedin:'https://www.linkedin.com/',instagram:'https://www.instagram.com/'}, man],
         ['kajbsibs akjbcnansjc','Designer',{linkedin:'https://www.linkedin.com/',instagram:'https://www.instagram.com/'}, secyImg],
