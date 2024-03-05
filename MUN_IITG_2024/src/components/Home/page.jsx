@@ -45,6 +45,7 @@ import cross_logo from "./resources/Vector 10.png";
 import home_logo from "./resources/Frame 72.png";
 import unhrc from "./resources/UNHRC.png";
 import unoc from "./resources/UNOC.png";
+import ccd from "./resources/ccd.jpg";
 import { Link } from "react-router-dom";
 
 const Mun = () => {
@@ -584,7 +585,8 @@ const Mun = () => {
             <div className="sponsor_logo">
                 <div className="sponsorone"><img src={sponsor1} alt="" className="s_logo1" /></div>
                 <div className="sponsortwo"><img src={sponsor2} alt="" className="s_logo2" /></div>
-                <div className="sponsorthree"><img src={sponsor3} alt="" className="s_logo3" /></div>
+                <div className="sponsortwo"><img src={sponsor3} alt="" className="s_logo3" /></div>
+                <div className="sponsorthree"><img src={ccd} alt="" className="s_logo1" /></div>
             </div>
 
             <Footer />
