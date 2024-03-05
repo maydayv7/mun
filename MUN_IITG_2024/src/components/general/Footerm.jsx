@@ -18,10 +18,10 @@ export default function Footer() {
             <p>Designed by Adi and Abdul </p>
             <p>Developed by Ansul, Devesh and  Deepak</p>
             <p>
-                Conference Hall, IIT Guwahati North
+                Conference Hall, IIT Guwahati
             </p>
             <p>
-                Guwahati, North Guwahati, Assam-767040
+                Guwahati, Assam-781039
             </p>
         </div>
     );
