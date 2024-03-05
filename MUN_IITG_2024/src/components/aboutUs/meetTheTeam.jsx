@@ -2,7 +2,7 @@ import ketan from '../../assets/aboutUs/Ketan0.png'
 import adityan from '../../assets/aboutUs/Adithyan2.png'
 import pratham from '../../assets/aboutUs/pratham0.png'
 import samarth from '../../assets/aboutUs/samarth20.png'
-import advait from '../../assets/aboutUs/adwaitha0.png'
+import advait from '../../assets/aboutUs/adwaitha2.png'
 import basith from '../../assets/aboutUs/Basith0.png'
 import kausth from '../../assets/aboutUs/kausthabh2.png'
 import vedika from '../../assets/aboutUs/vedika0.png'
@@ -20,7 +20,7 @@ const MeetTheTeam = () => {
         ['Advaitaa Arun','Director Marketing',{linkedin:'https://www.linkedin.com/in/advaitaa-arun?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',instagram:'https://www.instagram.com/advait_aa?igsh=MXd2OHp2ZjY5cnl0dw=='}, advait],
         ['Abdul Basith K','Director of Creative Content',{linkedin:'https://www.linkedin.com/in/basith-abk',instagram:'https://www.instagram.com/abdul_bk__?igsh=MXFtYXlia2I1bXRt'}, basith],
         ['Adithyan Sunilkumar','Director of Design',{linkedin:'http://www.linkedin.com/in/adi-sunilkumar',instagram:'https://www.instagram.com/adithyansunilk?igsh=OXR6NnRrbWVmeTU3'}, adityan],
-        ['Ketan Singh','Director Webops',{linkedin:'https://www.linkedin.com/in/ketan-singh-iitg/',instagram:'https://www.instagram.com/'}, ketan],
+        ['Ketan Singh','Director Webops',{linkedin:'https://www.linkedin.com/in/ketan-singh-iitg/',instagram:'https://www.instagram.com/botketan?igsh=M3F3NGlpMWprb3k4'}, ketan],
     ]
     return ( 
         <div className="px-9 max-letter:px-4 py-10 mt-40 w-full relative overflow-hidden">
