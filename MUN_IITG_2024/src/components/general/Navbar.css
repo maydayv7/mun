@@ -1,8 +1,16 @@
 
-.active{
-    background-color: blue;
-    overflow: hidden;
+
+
+.unactive{
+    color: black;
 }
+
+.active{
+  background-color: blue;
+  overflow: hidden;
+  color: white;
+}
+
 .deactive{
   background-color: white;
 }
