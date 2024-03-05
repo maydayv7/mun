@@ -422,5 +422,7 @@
     .para_position{
         margin-top: 10vw;
     }
-
+.modify_carousel{
+    height: 15vh!important;
+}
 }
