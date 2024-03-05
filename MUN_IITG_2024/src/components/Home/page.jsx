@@ -225,10 +225,10 @@ const Mun = () => {
                     <img src={ham_logo} onClick={handleClick} className={state2 ? "ham_logo fix_position" : "no_logo"} />
                     <img src={cross_logo} onClick={handleClick} className={state2 ? "no_logo" : "cross_logo fix_position"} />
                     <div className="ham_box">
-                        <div className="link_box"><a href="#" className="link_txt">Home</a></div>
-                        <div className="link_box"><a href="#" className="link_txt">About Us</a></div>
-                        <div className="link_box"><a href="#" className="link_txt">Previous Editions</a></div>
-                        <div className="link_box"><a href="#" className="link_txt">Contact Us</a></div>
+                        <div className="link_box"><a href="/" className="link_txt">Home</a></div>
+                        <div className="link_box"><a href="/" className="link_txt">About Us</a></div>
+                        <div className="link_box"><a href="/PreviousEditions" className="link_txt">Previous Editions</a></div>
+                        <div className="link_box"><a href="/ContactUs" className="link_txt">Contact Us</a></div>
                     </div>
                 </div>
             </div>
@@ -317,8 +317,7 @@ const Mun = () => {
                             We meticulously examine four major conflicts that have significantly impacted the world, leading to refugee crises. These encompass the appalling conditions suffered by the Rohingyas, the brutal ethnic cleansing in Nagorno-Karabakh, the adversities confronting Syrian refugees, and the hazardous journey northward embarked upon by Central American migrants in pursuit of a more promising life.
                             </p>
                             <p className="mobile_line f_size_12 roadmap_txt all_font mons_font">
-                                A Roadmap to Strengthening
-                                Democracy in India
+                            World Without borders
                             </p>
                             <a onClick={showMore3} className="see_more f_size_12 mobile_line see_txt all_font mons_font">
                                 See More
@@ -343,8 +342,7 @@ const Mun = () => {
                             Alongside this, the discussions will encompass the far-reaching consequences of armed conflicts on marine ecosystems, unraveling the complex relationship between warfare and aquatic life. Simultaneously, the committee aims to navigate the nuanced terrain of water conflicts, endeavoring to craft pragmatic strategies for sustainable resolutions.
                             </p>
                             <p className="mobile_line f_size_12 roadmap_txt all_font mons_font">
-                                A Roadmap to Strengthening
-                                Democracy in India
+                            Unifying efforts to cleanse our oceans 
                             </p>
                             <a onClick={showMore4} className="see_more f_size_12 mobile_line see_txt all_font mons_font">
                                 See More
@@ -371,8 +369,7 @@ const Mun = () => {
 
                             </p>
                             <p className="mobile_line f_size_12 roadmap_txt all_font mons_font">
-                                A Roadmap to Strengthening
-                                Democracy in India
+                            Reflecting on past missteps
                             </p>
                             <a onClick={showMore5} className="see_more f_size_12 mobile_line see_txt all_font mons_font">
                                 See More
@@ -386,25 +383,22 @@ const Mun = () => {
             </div>
             <div className="pie_chart_container">
                 <div className="align_center pie_circle_1">
-                    <p className="cabi_font sep_class_1">560+</p>
+                    <p className="cabi_font sep_class_1">1200+</p>
                     <div className="line_box_1 line_box">
-                        <div className="zero_line"></div>
                         <h2 className="heading_line mons_font all_font ff_1">Delegates</h2>
                         <p className="para_line mons_font all_font">from all over India</p>
                     </div>
                 </div>
                 <div className="align_center pie_circle_2">
-                    <p className="cabi_font sep_class_2">35+</p>
+                    <p className="cabi_font sep_class_2">75+</p>
                     <div className="line_box_2 line_box">
-                        <div className="zero_line"></div>
                         <h2 className="heading_line mons_font all_font">Executives</h2>
                         <p className="para_line mons_font all_font ff_2">overall</p>
                     </div>
                 </div>
                 <div className="align_center pie_circle_3">
-                    <p className="cabi_font sep_class_3">21+</p>
+                    <p className="cabi_font sep_class_3">100+</p>
                     <div className="line_box_3 line_box">
-                        <div className="zero_line"></div>
                         <h2 className="heading_line mons_font all_font ff_3">International Presses</h2>
                         <p className="para_line mons_font all_font">from country and beyond</p>
                     </div>
