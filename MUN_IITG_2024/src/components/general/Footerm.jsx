@@ -9,19 +9,19 @@ export default function Footer() {
                 <img src={munlogo} alt="" className='munlogo2'></img>
             </div>
             <div className="social">
-            <i className="bi bi-instagram fs-3"></i>
-            <i className="bi bi-linkedin fs-3"></i>
-            <i className="bi bi-facebook fs-3"></i>
-            <i className="bi bi-twitter-x fs-3"></i>
+            <a href='https://www.instagram.com/iitg_mun/' target='_blank' className='no-underline text-[black]'><i className="bi bi-instagram fs-3"></i></a>
+            <a href='https://www.linkedin.com/company/iitgmun/' target='_blank' className='no-underline text-[black]'><i className="bi bi-linkedin fs-3"></i></a>
+            <a href='https://www.facebook.com/iitgmun' target='_blank' className='no-underline text-[black]'><i className="bi bi-facebook fs-3"></i></a>
+            <a href='https://twitter.com/iitg_mun' target='_blank' className='no-underline text-[black]'><i className="bi bi-twitter-x fs-3"></i></a>
 
             </div>
-            <p>Designed by WXY ans </p>
-            <p>Designed by XYZ WXY ans </p>
+            <p>Designed by Adi and Abdul </p>
+            <p>Developed by Ansul, Devesh and  Deepak</p>
             <p>
-                Conference Hall, IIT Guwahati North
+                Conference Hall, IIT Guwahati
             </p>
             <p>
-                Guwahati, North Guwahati, Assam-767040
+                Guwahati, Assam-781039
             </p>
         </div>
     );

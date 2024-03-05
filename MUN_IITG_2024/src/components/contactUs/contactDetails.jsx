@@ -5,7 +5,7 @@ import DisplayDetails from './displayDetails'
 const ContactDetails = () => {
     const details = [
         [callImg,'Call us','tel',['7981828510','7011533630']],
-        [mailImg,'Mail us','mailto',['iitgmun@alcheriga.com']],
+        [mailImg,'Mail us','mailto',['iitgmun@alcheringa.in']],
         [locationImg,'Our location','location',['Conference Hall, IIT Guwahati,','North Guwahati, Guwahati,','Assam 781039']],
 
     ]
