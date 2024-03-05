@@ -531,7 +531,7 @@ const Mun = () => {
             <ControlsChevronLeftSmall />
           </Carousel.LeftArrow> */}
                             <Carousel.Reel style={{ overflow: 'hidden' }} className="reel_container">
-                                {items.map((_, index) => (
+                                {Data.map((data, index) => (
                                     <Carousel.Item key={index} className="w-100 h-70">
 
                                         {/* <div className="review_card_cat_4 position_r3">
@@ -548,15 +548,14 @@ const Mun = () => {
                         </div>                      
                     </div> */}
                                         <div className="review_card_cat_1">
-                                            <img src={Data[currentIndex + 3].image} className="rectangle" alt="" />
-                                            <img src={Data[currentIndex + 3].profileImage} className="male_profile" alt="" />
+                                            <img src={data.image} className="rectangle" alt="" />
+                                            <img src={data.profileImage} className="male_profile" alt="" />
                                             <div className="bio_heading">
-                                                <h2 className="mons_font cf2 review_f_size all_font">Vishwaprasanna Hariharan</h2>
-                                                <p className="mons_font cf2 review_f_size all_font">Delegate</p>
+                                                <h2 className="mons_font cf2 review_f_size all_font">{data.title}</h2>
+                                                <p className="mons_font cf2 review_f_size all_font">{data.role}</p>
                                             </div>
                                             <div className="comment">
-                                                <p className="mons_font cf2 review_f_size all_font">"It's a really amazing platform to learn not only about the affairs of
-                                                    the world but also about how to articulate your thoughts and put them into words."
+                                                <p className="mons_font cf2 review_f_size all_font">{data.comment}
                                                 </p>
                                             </div>
                                             <div className="stars_box"></div>
@@ -611,30 +610,30 @@ const Data = [
     {
         image: orange_frame,
         profileImage: male_profile,
-        title: "Vishwaprasanna Hariharan",
+        title: "Aditya Gupta",
         role: "Delegate",
-        comment: "It's a really amazing platform to learn not only about the affairs of the world but also about how to articulate your thoughts and put them into words."
+        comment: "Had a great time at the conference. It was a great learning experience and I got to meet a lot of new people. Looking forward to the next edition."
     },
     {
         image: green_frame,
         profileImage: male_profile,
-        title: "Vishwaprasanna Hariharan",
-        role: "Delegate",
-        comment: "It's a really amazing platform to learn not only about the affairs of the world but also about how to articulate your thoughts and put them into words."
+        title: "Sanya Sarhma",
+        role: "IP",
+        comment: "Clicked some of my best pictures here. Had a great time capturing the moments and writing about them. The Secretariat was very supportive and helpful."
     },
     {
         image: grey_frame,
         profileImage: male_profile,
-        title: "Vishwaprasanna Hariharan",
+        title: "Parth Shrivatsava",
         role: "Delegate",
-        comment: "It's a really amazing platform to learn not only about the affairs of the world but also about how to articulate your thoughts and put them into words."
+        comment: "The conference really had me on my toes all the time. Not one single dull moment. The debates were intense and the discussions were very engaging. "
     },
     {
         image: rectangle_1,
         profileImage: male_profile,
-        title: "Vishwaprasanna Hariharan",
+        title: "Anubhav Trivedi",
         role: "Delegate",
-        comment: "It's a really amazing platform to learn not only about the affairs of the world but also about how to articulate your thoughts and put them into words."
+        comment: "As a first timer, I was a bit nervous but the Secretariat was very supportive and helpful. The conference was very well organized and I had a great time."
     },
 ];
 export default Mun;
