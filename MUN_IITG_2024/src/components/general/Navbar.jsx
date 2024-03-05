@@ -83,9 +83,9 @@ export default function Navbar() {
       <li>
         <NavLink to="/" style={{ textDecoration: 'none', color:'black' }} className={`block py-2 px-3 md:p-0 rounded ${activeItem === 'home' ? 'active' : ''}`} onClick={() => setActiveItem('home')}>Home</NavLink>
       </li>
-      {/* <li>
-        <NavLink to="/#" style={{ textDecoration: 'none', color:'black' }} className={`block py-2 px-3 md:p-0 rounded ${activeItem === 'About' ? 'active' : ''}`} onClick={() => setActiveItem('About')}>About Us</NavLink>
-      </li> */}
+      <li>
+        <NavLink to="/AboutUs" style={{ textDecoration: 'none', color:'black' }} className={`block py-2 px-3 md:p-0 rounded ${activeItem === 'About' ? 'active' : ''}`} onClick={() => setActiveItem('About')}>About Us</NavLink>
+      </li>
       <li>
         <NavLink to="/PreviousEditions" style={{ textDecoration: 'none',color: "black" }} className={`block py-2 px-3 md:p-0 rounded ${activeItem === 'Previous Editions' ? 'active' : ''}`} onClick={() => setActiveItem('Previous Editions')}>Previous Editions</NavLink>
       </li>
