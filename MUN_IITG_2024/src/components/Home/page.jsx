@@ -76,6 +76,9 @@ const Mun = () => {
 
     const [state, setState] = useState("hide_content mobile_line_2");
     var [state2, setState2] = useState(true);
+    const [state3, setState3] = useState("hide_content mobile_line_2");
+    const [state4, setState4] = useState("hide_content mobile_line_2");
+    const [state5, setState5] = useState("hide_content mobile_line_2");
 
     function showMore() {
         setState("show_content mobile_line_2");
@@ -84,6 +87,33 @@ const Mun = () => {
     function seeLess() {
         setState("hide_content mobile_line_2");
     }
+
+    function showMore3() {
+        setState3("show_content mobile_line_2");
+    }
+
+    function seeLess3() {
+        setState3("hide_content mobile_line_2");
+    }
+
+
+    function showMore4() {
+        setState4("show_content mobile_line_2");
+    }
+
+    function seeLess4() {
+        setState4("hide_content mobile_line_2");
+    }
+
+
+    function showMore5() {
+        setState5("show_content mobile_line_2");
+    }
+
+    function seeLess5() {
+        setState5("hide_content mobile_line_2");
+    }
+
 
     function handleClick() {
         setState2(!state2);
@@ -103,20 +133,85 @@ const Mun = () => {
                             <img src={lok_sabha} className="lok_sabha" alt="" />
                         </div>
                         <div className="r_box">
-                            <p className="up_txt f_size_12 all_font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
-                                consectetur. Laudantium eveniet asperiores iure, sunt hic nobis voluptatibus libero recusandae cupiditate vero sequi
+                            <p className="up_txt f_size_12 all_font">This committee is committed to promoting meaningful discussions and improving accessibility in our democratic process, with the ultimate goal of strengthening the Indian democratic system.
                             </p>
                         </div>
                     </div>
                     <div className="down_box">
                         <h1 className="cabi_font head_lorem cf1 all_font down_txt t1">Election Evolution</h1>
-                        <p className="mons_font all_font f_size_12 down_txt t2">Lorem ipsum dolor, sit amet
-                            consectetur adipisicing elit. Tempora aliquid excepturi modi,
-                            nesciunt veritatis facere, fugiat quas nam cum quo odio at! Hic, voluptatibus voluptatum.
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, dicta!
+                        <p className="mons_font all_font f_size_12 down_txt t2">
+                        The focal points of our dialogue will include addressing issues related to the Election Commission, examining the nuances of the anti-defection law, delving into the intricacies of delimitation, scrutinizing the impact of election freebies, and exploring the feasibility of implementing the concept of "one nation, one election".
 
                         </p>
                         <a onClick={seeLess} className="see_less f_size_12 down_txt all_font t3">See Less</a>
+                    </div>
+                </div>
+            </div>
+            <div className={state3}>
+                <div className="inside_cont">
+                    <div className="up_box">
+                        <div className="l_box">
+                            <p className="comp_title cabi_font all_font cf1 text-[#D87B38]">UNHRC</p>
+                            <img src={unhrc} className="lok_sabha" alt="" />
+                        </div>
+                        <div className="r_box">
+                            <p className="up_txt f_size_12 all_font">A Call to Action on the Human Cost of War.
+                            This committee is dedicated to highlighting the plight experienced by refugees and internally displaced individuals.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="down_box">
+                        <h1 className="cabi_font head_lorem cf1 all_font down_txt t1 text-[#D87B38]">Beyond broken borders</h1>
+                        <p className="mons_font all_font f_size_12 down_txt t2">
+                        We meticulously examine four major conflicts. These encompass the appalling conditions suffered by the Rohingyas, the brutal ethnic cleansing in Nagorno-Karabakh, the adversities confronting Syrian refugees, and the hazardous journey northward embarked upon by Central American migrants in pursuit of a more promising life.
+
+                        </p>
+                        <a onClick={seeLess3} className="see_less f_size_12 down_txt all_font t3">See Less</a>
+                    </div>
+                </div>
+            </div>
+            <div className={state4}>
+                <div className="inside_cont">
+                    <div className="up_box">
+                        <div className="l_box">
+                            <p className="comp_title cabi_font all_font cf1">UNOC</p>
+                            <img src={unoc} className="league unoc_img" alt="" />
+                        </div>
+                        <div className="r_box">
+                            <p className="up_txt f_size_12 all_font">
+                            This conference is set to delve into the intricate challenges posed by water pollution on a global scale. The committee will focus on the impact of water pollution on human health, the environment, and the economy, and will work towards formulating a comprehensive plan to address these issues.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="down_box">
+                        <h1 className="cabi_font head_lorem cf1 all_font down_txt t1">Battles Below</h1>
+                        <p className="mons_font all_font f_size_12 down_txt t2">
+                        Alongside this, the discussions will encompass the far-reaching consequences of armed conflicts on marine ecosystems, unraveling the complex relationship between warfare and aquatic life. Simultaneously, the committee aims to navigate the nuanced terrain of water conflicts, endeavoring to craft pragmatic strategies for sustainable resolutions.
+                        </p>
+                        <a onClick={seeLess4} className="see_less f_size_12 down_txt all_font t3">See Less</a>
+                    </div>
+                </div>
+            </div>
+            <div className={state5}>
+                <div className="inside_cont">
+                    <div className="up_box">
+                        <div className="l_box">
+                            <p className="comp_title cabi_font all_font cf2">League of Nations</p>
+                            <img src={league} className="lok_sabha" alt="" />
+                        </div>
+                        <div className="r_box">
+                            <p className="up_txt f_size_12 all_font">This conference is set to delve into the failures and shortcomings of the League of Nations, and the lessons that can be learned from its legacy. The League of Nations was the first worldwide intergovernmental organisation whose principal mission was to maintain world peace
+                            </p>
+                        </div>
+                    </div>
+                    <div className="down_box">
+                        <h1 className="cabi_font head_lorem cf2 all_font down_txt t1">Harmony Haven</h1>
+                        <p className="mons_font all_font f_size_12 down_txt t2">
+                        The precursor to the modern United Nations, it created a template for the world to follow in the decades after its end. Understanding the
+                            failings of the League and the way the world improved upon the template it created, is key to understanding modern diplomacy.
+
+                        </p>
+                        <a onClick={seeLess5} className="see_less f_size_12 down_txt all_font t3">See Less</a>
                     </div>
                 </div>
             </div>
@@ -186,18 +281,12 @@ const Mun = () => {
                     </div>
                     <div className="right_box">
                         <div className="center_box">
-                            <p className="mons_font comp_lorem all_font display_type">Lorem ipsum dolor, sit amet
-                                consectetur adipisicing elit. Tempora aliquid excepturi modi,
-                                nesciunt veritatis facere, fugiat quas nam cum quo odio at! Hic, voluptatibus voluptatum.
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, dicta!
-
+                            <p className="mons_font comp_lorem all_font display_type">
+                            This committee is committed to promoting meaningful discussions and improving accessibility in our democratic process, with the ultimate goal of strengthening the Indian democratic system.
                             </p>
                             <h1 className="cabi_font head_lorem cf1 all_font">Election Evolution</h1>
-                            <p className="mons_font comp_lorem lower_para all_font display_type">Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Optio ratione accusamus, perspiciatis dolorem ipsa laborum porro
-                                hic placeat aliquid? Repudiandae, iste libero. Sapiente, soluta dolore dolorem
-                                distinctio nisi sequi earum tempora sunt fuga. Possimus qui, odio a hic perferendis
-                                repellat nobis consequatur exercitationem incidunt necessitatibus.
+                            <p className="mons_font comp_lorem lower_para all_font display_type">
+                            The focal points of our dialogue will include addressing issues related to the Election Commission, examining the nuances of the anti-defection law, delving into the intricacies of delimitation, scrutinizing the impact of election freebies, and exploring the feasibility of implementing the concept of "one nation, one election." This committee will come together and engage in a dialogue that can bring about positive change and empower the voices of the people.
                             </p>
                             <p className="mobile_line f_size_12 roadmap_txt all_font mons_font">
                                 A Roadmap to Strengthening
@@ -219,24 +308,19 @@ const Mun = () => {
                     </div>
                     <div className="right_box">
                         <div className="center_box">
-                            <p className="mons_font comp_lorem all_font display_type">Lorem ipsum dolor, sit amet
-                                consectetur adipisicing elit. Tempora aliquid excepturi modi,
-                                nesciunt veritatis facere, fugiat quas nam cum quo odio at! Hic, voluptatibus voluptatum.
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, dicta!
-
+                            <p className="mons_font comp_lorem all_font display_type">
+                            A Call to Action on the Human Cost of War.
+                            This committee is dedicated to highlighting the plight experienced by refugees and internally displaced individuals.
                             </p>
                             <h1 className="cabi_font head_lorem cf1 all_font text-[#D87B38] ">Beyond broken borders</h1>
-                            <p className="mons_font comp_lorem lower_para all_font display_type">Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Optio ratione accusamus, perspiciatis dolorem ipsa laborum porro
-                                hic placeat aliquid? Repudiandae, iste libero. Sapiente, soluta dolore dolorem
-                                distinctio nisi sequi earum tempora sunt fuga. Possimus qui, odio a hic perferendis
-                                repellat nobis consequatur exercitationem incidunt necessitatibus.
+                            <p className="mons_font comp_lorem lower_para all_font display_type">
+                            We meticulously examine four major conflicts that have significantly impacted the world, leading to refugee crises. These encompass the appalling conditions suffered by the Rohingyas, the brutal ethnic cleansing in Nagorno-Karabakh, the adversities confronting Syrian refugees, and the hazardous journey northward embarked upon by Central American migrants in pursuit of a more promising life.
                             </p>
                             <p className="mobile_line f_size_12 roadmap_txt all_font mons_font">
                                 A Roadmap to Strengthening
                                 Democracy in India
                             </p>
-                            <a onClick={showMore} className="see_more f_size_12 mobile_line see_txt all_font mons_font">
+                            <a onClick={showMore3} className="see_more f_size_12 mobile_line see_txt all_font mons_font">
                                 See More
                             </a>
                         </div>
@@ -251,23 +335,18 @@ const Mun = () => {
                     </div>
                     <div className="right_box">
                         <div className="center_box">
-                            <p className="mons_font comp_lorem all_font display_type">Lorem ipsum dolor, sit amet
-                                consectetur adipisicing elit. Tempora aliquid excepturi modi,
-                                nesciunt veritatis facere, fugiat quas nam cum quo odio at! Hic, voluptatibus voluptatum.
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, dicta!
+                            <p className="mons_font comp_lorem all_font display_type">
+                            This conference is set to delve into the intricate challenges posed by water pollution on a global scale. The committee will focus on the impact of water pollution on human health, the environment, and the economy, and will work towards formulating a comprehensive plan to address these issues.
                             </p>
-                            <h1 className="cabi_font head_lorem cf2 all_font">Battles Below</h1>
-                            <p className="mons_font comp_lorem lower_para all_font display_type">Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Optio ratione accusamus, perspiciatis dolorem ipsa laborum porro
-                                hic placeat aliquid? Repudiandae, iste libero. Sapiente, soluta dolore dolorem
-                                distinctio nisi sequi earum tempora sunt fuga. Possimus qui, odio a hic perferendis
-                                repellat nobis consequatur exercitationem incidunt necessitatibus.
+                            <h1 className="cabi_font head_lorem cf1 all_font">Battles Below</h1>
+                            <p className="mons_font comp_lorem lower_para all_font display_type">
+                            Alongside this, the discussions will encompass the far-reaching consequences of armed conflicts on marine ecosystems, unraveling the complex relationship between warfare and aquatic life. Simultaneously, the committee aims to navigate the nuanced terrain of water conflicts, endeavoring to craft pragmatic strategies for sustainable resolutions.
                             </p>
                             <p className="mobile_line f_size_12 roadmap_txt all_font mons_font">
                                 A Roadmap to Strengthening
                                 Democracy in India
                             </p>
-                            <a onClick={showMore} className="see_more f_size_12 mobile_line see_txt all_font mons_font">
+                            <a onClick={showMore4} className="see_more f_size_12 mobile_line see_txt all_font mons_font">
                                 See More
                             </a>
                         </div>
@@ -282,24 +361,20 @@ const Mun = () => {
                     </div>
                     <div className="right_box">
                         <div className="center_box">
-                            <p className="mons_font comp_lorem all_font display_type">Lorem ipsum dolor, sit amet
-                                consectetur adipisicing elit. Tempora aliquid excepturi modi,
-                                nesciunt veritatis facere, fugiat quas nam cum quo odio at! Hic, voluptatibus voluptatum.
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, dicta!
-
+                            <p className="mons_font comp_lorem all_font display_type">
+                            This conference is set to delve into the failures and shortcomings of the League of Nations, and the lessons that can be learned from its legacy. The League of Nations was the first worldwide intergovernmental organisation whose principal mission was to maintain world peace
                             </p>
-                            <h1 className="cabi_font head_lorem cf2 all_font">Election Evolution</h1>
-                            <p className="mons_font comp_lorem lower_para all_font display_type">Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Optio ratione accusamus, perspiciatis dolorem ipsa laborum porro
-                                hic placeat aliquid? Repudiandae, iste libero. Sapiente, soluta dolore dolorem
-                                distinctio nisi sequi earum tempora sunt fuga. Possimus qui, odio a hic perferendis
-                                repellat nobis consequatur exercitationem incidunt necessitatibus.
+                            <h1 className="cabi_font head_lorem cf2 all_font">Harmony Haven</h1>
+                            <p className="mons_font comp_lorem lower_para all_font display_type">
+                            This continuous crisis committee will keep the delegates on their toes as they brainstorm ways to ensure the League of Nations comes up with peaceful and beneficial solutions for a wide range of crises.The precursor to the modern United Nations, it created a template for the world to follow in the decades after its end. Understanding the
+                            failings of the League and the way the world improved upon the template it created, is key to understanding modern diplomacy.
+
                             </p>
                             <p className="mobile_line f_size_12 roadmap_txt all_font mons_font">
                                 A Roadmap to Strengthening
                                 Democracy in India
                             </p>
-                            <a onClick={showMore} className="see_more f_size_12 mobile_line see_txt all_font mons_font">
+                            <a onClick={showMore5} className="see_more f_size_12 mobile_line see_txt all_font mons_font">
                                 See More
                             </a>
                         </div>
