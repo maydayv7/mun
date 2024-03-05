@@ -84,15 +84,11 @@ export default function Navbar() {
         <NavLink to="/" style={{ textDecoration: 'none'}} className={`block py-2 px-3 md:p-0 rounded ${activeItem === 'home' ? 'active' : 'unactive'}`} onClick={() => setActiveItem('home')}>Home</NavLink>
       </li>
       <li>
-        <NavLink to="/AboutUs" style={{ textDecoration: 'none', color:'black' }} className={`block py-2 px-3 md:p-0 rounded ${activeItem === 'About' ? 'active' : ''}`} onClick={() => setActiveItem('About')}>About Us</NavLink>
+        <NavLink to="/AboutUs" style={{ textDecoration: 'none', color:'black' }} className={`block py-2 px-3 md:p-0 rounded ${activeItem === 'About' ? 'active' : 'unactive'}`} onClick={() => setActiveItem('About')}>About Us</NavLink>
       </li>
       <li>
         <NavLink to="/PreviousEditions" style={{ textDecoration: 'none' }} className={`block py-2 px-3 md:p-0 rounded ${activeItem === 'Previous Editions' ? 'active' : 'unactive'}`} onClick={() => setActiveItem('Previous Editions')}>Previous Editions</NavLink>
       </li>
-      {/* <li>
-          <NavLink to="/Service"
-          style={{textDecoration:'none'}} className={`block py-2 px-3 md:p-0 rounded ${activeItem === 'Services' ? 'active' : ''}`} onClick={() => setActiveItem('Services')}>Services</NavLink>
-        </li> */}
       <li>
         <NavLink to="/ContactUs" style={{ textDecoration: 'none' }} className={`block py-2 px-3 md:p-0 rounded ${activeItem === 'Contact' ? 'active' : 'unactive'}`} onClick={() => setActiveItem('Contact')}>Contact</NavLink>
       </li>

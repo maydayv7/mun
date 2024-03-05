@@ -1,4 +1,6 @@
 import secyImg from '../../assets/aboutUs/secy1.png'
+import ketan from '../../assets/aboutUs/Ketan.png'
+import adityan from '../../assets/aboutUs/Adithyan.png'
 import man from '../../assets/aboutUs/man.png'
 import TeamCard from './teamCard';
 import SectionHeading from '../general/sectionHeading';
@@ -13,8 +15,8 @@ const MeetTheTeam = () => {
         ['kjbcxhbzjab jiabc','Designer',{linkedin:'https://www.linkedin.com/',instagram:'https://www.instagram.com/'}, man],
         ['kajbsibs akjbcnansjc','Designer',{linkedin:'https://www.linkedin.com/',instagram:'https://www.instagram.com/'}, secyImg],
         ['name','Designer',{linkedin:'https://www.linkedin.com/',instagram:'https://www.instagram.com/'}, man],
-        ['name','Designer',{linkedin:'https://www.linkedin.com/',instagram:'https://www.instagram.com/'}, secyImg],
-        ['name','Designer',{linkedin:'https://www.linkedin.com/',instagram:'https://www.instagram.com/'}, man],
+        ['name','Designer',{linkedin:'https://www.linkedin.com/',instagram:'https://www.instagram.com/'}, adityan],
+        ['name','Designer',{linkedin:'https://www.linkedin.com/',instagram:'https://www.instagram.com/'}, ketan],
     ]
     return ( 
         <div className="px-9 max-letter:px-4 py-10 mt-40 w-full relative overflow-hidden">
