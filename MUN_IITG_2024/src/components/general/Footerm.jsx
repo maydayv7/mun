@@ -1,7 +1,7 @@
 import './footer.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
-import munlogo from './munlogo.png';
+import munlogo from './footermun.svg';
 export default function Footer() {
     return (
         <div className="container-main2">
