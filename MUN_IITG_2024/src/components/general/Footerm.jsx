@@ -4,10 +4,9 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import munlogo from './munlogo.png';
 export default function Footer() {
     return (
-        <div className="container-main">
+        <div className="container-main2">
             <div className="logo_1">
-                <img src={munlogo} alt="" className='munlogo' />
-               
+                <img src={munlogo} alt="" className='munlogo2'></img>
             </div>
             <div className="social">
             <i className="bi bi-instagram fs-3"></i>
