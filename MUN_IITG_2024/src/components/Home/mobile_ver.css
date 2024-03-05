@@ -376,12 +376,13 @@
     }
 
     .carosol_container {
-        height: 67.5vw;
+        z-index: 0!important;
+        height: 67.5vw!important;
     }
 
     .review_card_cat_1{
-        width: 68.50vw;
-        height: 44.29vw;
+        width: 68.50vw !important;
+        height: 44.29vw!important;
     }
 
     .male_profile{

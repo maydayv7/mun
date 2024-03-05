@@ -555,7 +555,7 @@ const Mun = () => {
                                                 <p className="mons_font cf2 review_f_size all_font">{data.role}</p>
                                             </div>
                                             <div className="comment">
-                                                <p className="mons_font cf2 review_f_size all_font">{data.comment}
+                                                <p className="mons_font cf2 review_f_size all_font para_position">{data.comment}
                                                 </p>
                                             </div>
                                             <div className="stars_box"></div>
