@@ -419,5 +419,8 @@
         width: 22.77vw;
         height: auto;
     }
+    .para_position{
+        margin-top: 10vw;
+    }
 
 }
