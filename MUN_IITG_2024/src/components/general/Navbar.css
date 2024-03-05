@@ -8,7 +8,7 @@
 }
 .munlogos{
   z-index: 100;
-  position: absolute;
+  position: fixed;
   padding-top: 0;
   height: 9vw;
   margin-top: 0.5vw;
@@ -17,7 +17,7 @@
 .alcherlogo{
   margin-top: 0.1vw;
   z-index:100;
-  position: absolute;
+  position: fixed;
   right: 0.4vw;
 }
 
