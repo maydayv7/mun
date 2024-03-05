@@ -4,7 +4,7 @@ import locationImg from '../../assets/contactUs/Location.svg'
 import DisplayDetails from './displayDetails'
 const ContactDetails = () => {
     const details = [
-        [callImg,'Call us','tel',['123456789','123456789','123456789']],
+        [callImg,'Call us','tel',['7981828510','7011533630']],
         [mailImg,'Mail us','mailto',['iitgmun@alcheriga.com']],
         [locationImg,'Our location','location',['Conference Hall, IIT Guwahati,','North Guwahati, Guwahati,','Assam 781039']],
 

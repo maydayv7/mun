@@ -45,6 +45,7 @@ import cross_logo from "./resources/Vector 10.png";
 import home_logo from "./resources/Frame 72.png";
 import unhrc from "./resources/UNHRC.png";
 import unoc from "./resources/UNOC.png";
+import { Link } from "react-router-dom";
 
 const Mun = () => {
     const [isMobileView, setIsMobileView] = useState(false);
@@ -225,10 +226,9 @@ const Mun = () => {
                     <img src={ham_logo} onClick={handleClick} className={state2 ? "ham_logo fix_position" : "no_logo"} />
                     <img src={cross_logo} onClick={handleClick} className={state2 ? "no_logo" : "cross_logo fix_position"} />
                     <div className="ham_box">
-                        <div className="link_box"><a href="/" className="link_txt">Home</a></div>
-                        <div className="link_box"><a href="/" className="link_txt">About Us</a></div>
-                        <div className="link_box"><a href="/PreviousEditions" className="link_txt">Previous Editions</a></div>
-                        <div className="link_box"><a href="/ContactUs" className="link_txt">Contact Us</a></div>
+                        <div className="link_box"><Link to="/" className="link_txt">Home</Link></div>
+                        <div className="link_box"><Link to="/PreviousEditions" className="link_txt">Previous Editions</Link></div>
+                        <div className="link_box"><Link to="/ContactUs" className="link_txt">Contact Us</Link></div>
                     </div>
                 </div>
             </div>
