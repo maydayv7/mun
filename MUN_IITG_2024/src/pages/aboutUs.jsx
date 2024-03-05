@@ -4,6 +4,7 @@ import MeetTheTeam from "../components/aboutUs/meetTheTeam";
 import PageHeader from "../components/general/pageHeader";
 import { useState,useEffect } from "react";
 import Mnavbar from '../components/general/mobile_nav'
+import Footerm from "../components/general/Footerm";
 const AboutUs = () => {
   const [isMobileView, setIsMobileView] = useState(false);
 
@@ -43,6 +44,7 @@ const AboutUs = () => {
       </div>
       <Letter />
       <MeetTheTeam/>
+      <Footerm />
     </div>
   );
 };

@@ -5,6 +5,7 @@ import PageHeader from "../components/general/pageHeader";
 import SectionHeading from "../components/general/sectionHeading";
 import { useState,useEffect } from "react";
 import Mnavbar from '../components/general/mobile_nav'
+import Footerm from "../components/general/Footerm";
 const ContactUs = () => {
     const [isMobileView, setIsMobileView] = useState(false);
     useEffect(() => {
@@ -29,7 +30,7 @@ const ContactUs = () => {
             <PageHeader title={'Contact Us'} color={'#F8506B'}/>
             <ContactDetails/>
             <Map/>
-            
+            <Footerm />
         </>
      );
 }
