@@ -18,7 +18,7 @@ const Timeline = () => {
                                 <div className={styles.sideContent}>
                                     <img className={styles.arrow} src={arrow} alt="" />
                                     <p className={styles.year}>{year}</p>
-                                    <p className={styles.edition}>Edition XII</p>
+                                    <p className={styles.edition}>{year==="2024"?"Edition XVI":year==="2023"?"Edition XV":"Edition XIV"}</p>
                                 </div>
                             </div>
                             <div className={styles.modal}>
